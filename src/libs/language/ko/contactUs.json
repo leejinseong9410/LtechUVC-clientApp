@@ -1,0 +1,20 @@
+{
+  "title": "LTechUVC에 \n자유롭게 문의하세요",
+
+  "subTitle": "아래의 내용을 전부 입력 후 접수해주세요",
+
+  "label1": "이름",
+  "label1_placeholder": "이름을 입력하세요",
+
+  "label2": "이메일",
+  "label2_placeholder": "이메일을 입력하세요",
+  "errMsg": "⛔️ 이메일 형식으로 입력하세요",
+
+  "label3": "제목",
+  "label3_placeholder": "제목을 입력하세요",
+
+  "label4": "내용",
+  "label4_placeholder": "내용을 입력하세요",
+
+  "tabName": "문의 접수하기"
+}

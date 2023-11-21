@@ -1,0 +1,38 @@
+{
+  "category": [
+    {
+      "title": "회사소개",
+      "menus": [
+        { "title": "CEO 인사말", "path": "/company/ceo-message" },
+        { "title": "비전", "path": "/company/vision" },
+        { "title": "Contact US", "path": "/company/contactUs" }
+      ]
+    },
+    {
+      "title": "사업영역",
+      "menus": [
+        { "title": "그린암모니아", "path": "/business/geen-ammonia" },
+        { "title": "스마트 에너지", "path": "/business/smart-energy" },
+        { "title": "수소 융˙복합 사업", "path": "/business/hydrogen-business" }
+      ]
+    },
+    {
+      "title": "프로젝트",
+      "menus": [{ "title": "프로젝트", "path": "" }]
+    },
+    {
+      "title": "미디어",
+      "menus": [
+        { "title": "갤러리", "path": "/media/gallery" },
+        { "title": "유튜브", "path": "/media/youtube" }
+      ]
+    },
+    {
+      "title": "자료실",
+      "menus": [
+        { "title": "보도자료", "path": "/reference/press/list" },
+        { "title": "공고", "path": "/reference/notice/list" }
+      ]
+    }
+  ]
+}

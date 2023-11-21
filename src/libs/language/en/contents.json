@@ -1,0 +1,42 @@
+{
+  "프로젝트": {
+    "banner": {
+      "title": "Projects",
+      "subTitle": "You can check LTechUVC business performance and vision through the project."
+    },
+
+    "tabName": "Learn more",
+    "detail_tabName": "Go to list"
+  },
+
+  "갤러리": {
+    "title": "Gallery",
+    "subTitle": "LTechUVC is a gallery where you can hear various news.",
+    "tabName": "Close"
+  },
+
+  "유튜브": {
+    "title": "“엘유TV”",
+    "subTitle": "You can check the vision and business feasibility of green hydrogen and green energy through LTechUVC YouTube channel “엘유TV.”",
+    "near": "Latest Upload"
+  },
+
+  "보도자료": {
+    "title": "Press Release",
+    "subTitle": "Check out LTechUVC latest press release.",
+    "near": "Latest Press Release",
+    "detail_tabName": "Go to list"
+  },
+
+  "공고": {
+    "title": "Notice",
+    "subTitle": "You can check various Notice from LTechUVC.",
+    "label1": "Title",
+    "label2": "Date",
+    "detail_tabName": "Go to list",
+    "alartView": {
+      "tabName1": "See more",
+      "tabName2": "Close"
+    }
+  }
+}

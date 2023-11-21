@@ -1,0 +1,40 @@
+{
+  "banner": {
+    "title": "Green Energy Leading Company",
+    "subTitle": "LTechUVC is a global leader in carbon neutrality\nmaking the earth healthy with green energy"
+  },
+  "item1": {
+    "title": "Business",
+    "subTitle": "LTechUVC is a hydrogen-based green energy company that is expanding its scope into various fields such as green hydrogen, \ngreen ammonia manufacturing business, fuel cell power generation business,\nand hydrogen convergence business",
+    "content1": "Green ammonia manufacturing business",
+    "content2": "Smart city & fuel cell business",
+    "content3": "Hydrogen fusion-composite business",
+    "tabName": "See more"
+  },
+
+  "item2": {
+    "title": "Last climate warning of 1.5°C",
+    "subTitle": "If the Earth's temperature rises by 1.5°C in the future, humanity's future may disappear due to many negative factors such as forest fires caused by heat waves, tsunamis due to melting glaciers, etc. \nLTechUVC is leading the global market as a company that takes the lead in protecting the global environment through carbon neutrality.",
+    "tabName": "Learn more"
+  },
+
+  "item3": {
+    "title": "Introducing LTechUVC YouTube '엘유TV'",
+    "subTitle": "You can check out LTechUVC various promotional videos and /ninformation about eco-friendly energy on YouTube.",
+    "tabName": "See more"
+  },
+
+  "item4": {
+    "title1": "LTechUVC",
+    "title2": "NEWS",
+    "subTitle": "You can check out LTechUVC's various business /nachievements and new news.",
+    "tabName": "See more"
+  },
+
+  "PROJECTS": {
+    "title1": "LTechUVC",
+    "title2": "PROJECTS",
+    "subTitle": "You can check out LTechUVC /nongoing projects",
+    "tabName": "See more"
+  }
+}

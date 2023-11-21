@@ -1,0 +1,38 @@
+{
+  "category": [
+    {
+      "title": "Company",
+      "menus": [
+        { "title": "CEO Message", "path": "/company/ceo-message" },
+        { "title": "Vision", "path": "/company/vision" },
+        { "title": "Contact US", "path": "/company/contactUs" }
+      ]
+    },
+    {
+      "title": "Business",
+      "menus": [
+        { "title": "GreenAmmonia", "path": "/business/geen-ammonia" },
+        { "title": "Smart Energy", "path": "/business/smart-energy" },
+        { "title": "Hydrogen business", "path": "/business/hydrogen-business" }
+      ]
+    },
+    {
+      "title": "Projects",
+      "menus": [{ "title": "Projects", "path": "/projects/list" }]
+    },
+    {
+      "title": "Media",
+      "menus": [
+        { "title": "Gallery", "path": "/media/gallery" },
+        { "title": "Youtube", "path": "/media/youtube" }
+      ]
+    },
+    {
+      "title": "Reference",
+      "menus": [
+        { "title": "Press Release", "path": "/reference/press/list" },
+        { "title": "Notification", "path": "/reference/notice/list" }
+      ]
+    }
+  ]
+}

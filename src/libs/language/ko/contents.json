@@ -1,0 +1,42 @@
+{
+  "프로젝트": {
+    "banner": {
+      "title": "프로젝트",
+      "subTitle": "LTechUVC의 사업성과 및 비전을 프로젝트를 통해 확인할 수 있습니다."
+    },
+
+    "tabName": "자세히 보기",
+    "detail_tabName": "목록으로"
+  },
+
+  "갤러리": {
+    "title": "갤러리",
+    "subTitle": "LTechUVC 다양한 소식을 접할수 있는 갤러리입니다.",
+    "tabName": "닫기"
+  },
+
+  "유튜브": {
+    "title": "“엘유TV”",
+    "subTitle": "LTechUVC의 유튜브 채널 “엘유TV”를 통해 그린수소, 그린에너지의 비전과 사업성을 확인할 수 있습니다.",
+    "near": "최근 업로드"
+  },
+
+  "보도자료": {
+    "title": "보도자료",
+    "subTitle": "엘텍유브이씨의 최신 보도자료를 확인하세요",
+    "near": "최신 보도자료",
+    "detail_tabName": "목록으로"
+  },
+
+  "공고": {
+    "title": "공고",
+    "subTitle": "LTechUVC의 다양한 공고를 확인할 수 있습니다.",
+    "label1": "제목",
+    "label2": "등록일",
+    "detail_tabName": "목록으로",
+    "alartView": {
+      "tabName1": "더보기",
+      "tabName2": "닫기"
+    }
+  }
+}

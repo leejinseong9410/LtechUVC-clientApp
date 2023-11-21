@@ -1,0 +1,40 @@
+{
+  "banner": {
+    "title": "Green Ammonia",
+    "subTitle": "Green ammonia development project with 'ZERO' greenhouse gas emissions"
+  },
+
+  "title": "“A new energy source that will lead the hydrogen Economy”",
+
+  "text": "Green ammonia is a new energy source that will lead the hydrogen economy with zero carbon emissions, and refers to ammonia produced as renewable energy without carbon dioxide emissions. Following the global eco-friendly trend, it is rapidly emerging as a new energy source that will advance the ‘Net Zero’,‘Carbon Zero’ goals set by countries and organizations around the world. Abu Dhabi currently has demand for green hydrogen production technology and hydrogen convergence business, and Korea has excellent green hydrogen production technology and various convergence technologies based on power generation through hydrogen. Accordingly, LTechUVC is carrying out a green ammonia production project to meet demand.",
+
+  "contents1": {
+    "태양광": {
+      "title": "Solar panel",
+      "text": "The electricity needed for the plant is /nSupplied by renewable energy solar power. "
+    },
+    "공기분해": {
+      "title": "Air Decomposition",
+      "text": "Separates nitrogen from air /nTo synthesize ammonia."
+    },
+    "암모니아": {
+      "title": "Ammonia synthesis",
+      "text": "Green ammonia is produced by reacting nitrogen and /nHydrogen that have completed the process."
+    },
+    "수전해": {
+      "title": "Transit",
+      "text": "This is completed by transporting the produced /nGreen ammonia to Korea via LNG ships."
+    }
+  },
+
+  "contents2": {
+    "item1": { "title": "Boiler", "text": "Heat production" },
+    "item2": { "title": "Steel", "text": "Raw fuel conversion" },
+    "item3": { "title": "Coal-fired power generation", "text": "Raw material briquette conversion" }
+  },
+
+  "ing": {
+    "title": "Abu Dhabi Hamra,\nGreen ammonia supply hub",
+    "text": "LTechUVC is developing a green ammonia plant business after receiving a 2.45 million m2 Green Ammonia plant business site from the U.A.E government."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Please feel free to \nContact LTechUVC.",
+
+  "subTitle": "Please fill in all the information below and submit.",
+
+  "label1": "Name",
+  "label1_placeholder": "please edit name ..",
+
+  "label2": "E-mail",
+  "label2_placeholder": "please edit e-mail ..",
+  "errMsg": "⛔️ edit email!!",
+
+  "label3": "Title",
+  "label3_placeholder": "please edit title ..",
+
+  "label4": "Comments",
+  "label4_placeholder": "please edit comments ..",
+
+  "tabName": "Apply"
+}

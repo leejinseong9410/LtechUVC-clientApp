@@ -1,0 +1,71 @@
+{
+  "banner": {
+    "title": "CEO Message",
+    "subTitle": "Introducing the management of LTechUVC, an eco-friendly company"
+  },
+
+  "infoTitle": "Green Energy Business\nGlobal Leader LTechUVC",
+
+  "ceo": {
+    "introduce": {
+      "position": "Co-CEO of LTechUVC,Inc.",
+      "name1": "Se ho Kim",
+      "name2": "LEE JI YOUNG",
+      "text": "Hello. \nLTechUVC is a specialized company in hydrogen-based smart cities and ESG management \nWe are expanding our scope in various areas, including electric vehicle charging stations, fuel cell power generation projects, and smart city initiatives in the U.A.E. Based in the United Arab Emirates, LTechUVC actively promotes the production of green hydrogen and green ammonia in line with the global energy transition. With a strong network built over 20 years in the Middle East region, LTechUVC is a leader in the global market. Our goal is to become a world-leading company in the field of hydrogen-based smart city projects, contributing to carbon neutrality and establishing ourselves as a global green energy specialist"
+    },
+
+    "school": {
+      "title": "Education",
+      "history": [
+        {
+          "data": "2019 ~ 2022",
+          "text": "Master's degree in political diplomacy at Korea University (Global Political Department)"
+        },
+        {
+          "data": "2013",
+          "text": "FRANKLIN UNIVERSITY, Columbus, Ohio, U.S.A.\nGreen Building Concepts and Strategies (energy efficiency strategy)"
+        },
+        {
+          "data": "1997 - 2001",
+          "text": "UNIVERSITY OF NEW SOUTH WALES, SYDNEY, AUSTRALIA Bachelor of Sociology and History"
+        }
+      ]
+    },
+
+    "company": {
+      "title": "경력",
+      "history": [
+        {
+          "data": "2021 ~ ing",
+          "text": "LTechUVC,Inc of CEO"
+        },
+        {
+          "data": "2014 ~ ing",
+          "text": "UVC, Inc of CEO and PILLIXY GROUP - Managing Director / Partner"
+        },
+        {
+          "data": "2013 ~ ing",
+          "text": "PILLIXY GROUP - Managing Director / Partner"
+        },
+        {
+          "data": "2009 ~ 2013",
+          "text": "SK E&C. Abu Dhabi, U.A.E"
+        },
+        {
+          "data": "2007 ~ 2009",
+          "text": "SK E&C. head office"
+        },
+        {
+          "data": "2005 ~ 2007",
+          "text": "UI E&C & UI Energy [Dubai U.A.E. / Erbil Iraq Branch Manager]"
+        }
+      ]
+    }
+  },
+
+  "cfo": {
+    "name": "Shaun Robert Lynn",
+    "job": "CFO",
+    "text": "Shaun has over 25 years experience in the global financial markets.  \nHe spent the first 20 years working For global banks in various locations  of New Zealand, Australia, London, Hong Kong and Singapore,Predominantly trading in Fixed Income markets globally,across a large variety of  products and sectors.Prior to his current role, he headed up the Fixed Income Group for a North American Bank based out of Hong Kong\nAfter 20 years on the banking side, he took on an active advisory role in a prominent Hong Kong family working directly with the Chairman and CEO,managing the family office in asset allocation Across equities, venture capital, direct asset takeover and management, along with treasury Management for the wider group \nThis extensive experience around the world has allowed Shaun to Build a global network of counterparts, information providers and technology producers to ensure the Team is able to produce and access the best products,returns and liquidity for our clients in all markets conditions."
+  }
+}
