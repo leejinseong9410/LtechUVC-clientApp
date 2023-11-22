@@ -5,7 +5,7 @@ import ceoBanner from 'public/images/ceo/ceo-banner.png';
 
 //libs
 import { Column, Img, Row, Section, Spacing, Txt, TxtSpan } from '@/_ui_libs/_index';
-import { MQ, colors, fontSize, ContainerTheme } from '@/libs/themes/_index';
+import { MQ, colors, fontSize } from '@/libs/themes/_index';
 
 //atoms
 import { useRecoilValue } from 'recoil';
@@ -30,7 +30,7 @@ export default function CeoMessage() {
 
   return (
     <>
-      <SEO title="CEO 인사말" description="CEO 인사말" />
+      <SEO title={txt?.infoTitle} />
       <Section>
         <BannerTitle
           image={ceoBanner.src}
@@ -38,7 +38,7 @@ export default function CeoMessage() {
           subTitle={txt?.banner?.subTitle}
         />
 
-        <ContentView maxWidth={1140} horizontal={20} title={txt?.infoTitle}>
+        <ContentView maxWidth={1140} padding={{ horizontal: 20 }} title={txt?.infoTitle}>
           <Column margin={{ top: 30 }} gap={160} css={{ [MQ[2]]: { rowGap: 80 } }}>
             <Row
               gap={80}
@@ -75,7 +75,7 @@ export default function CeoMessage() {
 
                 <Spacing size={60} />
 
-                {/* CEO 학력 */}
+                {/* --- CEO 학력 --- */}
                 <Txt as="strong" size={22} margin={{ bottom: 10 }}>
                   {ceoSchool?.title}
                 </Txt>
@@ -98,7 +98,7 @@ export default function CeoMessage() {
 
                 <Spacing size={60} />
 
-                {/* CEO 경력 */}
+                {/* --- CEO 경력 --- */}
                 <Txt as="strong" size={22} margin={{ bottom: 10 }}>
                   {ceoCompany?.title}
                 </Txt>
@@ -121,7 +121,7 @@ export default function CeoMessage() {
               </Column>
             </Row>
 
-            {/* cfo 정보 */}
+            {/* --- CFO 정보 --- */}
             <Row
               gap={80}
               crossGap={30}

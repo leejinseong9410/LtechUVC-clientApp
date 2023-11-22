@@ -31,7 +31,7 @@ export default function contactUs() {
 
   return (
     <>
-      <SEO title="문의하기" description="문의하기" />
+      <SEO title={txt?.title} />
       <Section>
         <Container maxWidth={560} padding={{ horizontal: 20 }} css={ContainerTheme()}>
           <Img src={contactUsImg} alt="contactUs" />
@@ -47,6 +47,7 @@ export default function contactUs() {
           </Column>
 
           <Form gap={20}>
+            {/* 이름 */}
             <Input label={txt?.label1} labelEdge="*">
               <Input.TextField
                 shape="box"
@@ -57,6 +58,7 @@ export default function contactUs() {
               />
             </Input>
 
+            {/* 이메일 */}
             <Input label={txt?.label2} labelEdge="*">
               <Input.TextField
                 shape="box"
@@ -69,6 +71,7 @@ export default function contactUs() {
               />
             </Input>
 
+            {/* 제목 */}
             <Input label={txt?.label3} labelEdge="*">
               <Input.TextField
                 shape="box"
@@ -80,6 +83,7 @@ export default function contactUs() {
               />
             </Input>
 
+            {/* 내용 */}
             <Input label={txt?.label4} labelEdge="*">
               <Input.Textarea
                 shape="box"

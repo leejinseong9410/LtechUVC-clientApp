@@ -2,7 +2,8 @@
   "프로젝트": {
     "banner": {
       "title": "Projects",
-      "subTitle": "You can check LTechUVC business performance and vision through the project."
+      "subTitle": "You can check LTechUVC business performance and vision through the project.",
+      "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700657123/%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_97107_ihlbo0.png"
     },
 
     "tabName": "Learn more",

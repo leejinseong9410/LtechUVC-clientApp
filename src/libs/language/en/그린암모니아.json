@@ -1,39 +1,66 @@
 {
   "banner": {
     "title": "Green Ammonia",
-    "subTitle": "Green ammonia development project with 'ZERO' greenhouse gas emissions"
+    "subTitle": "Green ammonia development project with 'ZERO' greenhouse gas emissions",
+    "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700625685/banner-img_sjgbtt.png"
   },
 
   "title": "“A new energy source that will lead the hydrogen Economy”",
 
-  "text": "Green ammonia is a new energy source that will lead the hydrogen economy with zero carbon emissions, and refers to ammonia produced as renewable energy without carbon dioxide emissions. Following the global eco-friendly trend, it is rapidly emerging as a new energy source that will advance the ‘Net Zero’,‘Carbon Zero’ goals set by countries and organizations around the world. Abu Dhabi currently has demand for green hydrogen production technology and hydrogen convergence business, and Korea has excellent green hydrogen production technology and various convergence technologies based on power generation through hydrogen. Accordingly, LTechUVC is carrying out a green ammonia production project to meet demand.",
+  "text": "Green ammonia is a new energy source that will lead the hydrogen economy with zero carbon emissions,and refers to ammonia produced as renewable energy without carbon dioxide emissions. Following the global eco-friendly trend, it is rapidly emerging as a new energy source that will advance the ‘Net Zero’,‘Carbon Zero’ goals set by countries and organizations around the world. Abu Dhabi currently has demand for green hydrogen production technology and hydrogen convergence business, and Korea has excellent green hydrogen production technology and various convergence technologies based on power generation through hydrogen. Accordingly, LTechUVC is carrying out a green ammonia production project to meet demand.",
 
-  "contents1": {
-    "태양광": {
+  "titleImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700625684/%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3_%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_4_wxz7hm.png",
+
+  "contents": [
+    {
       "title": "Solar panel",
-      "text": "The electricity needed for the plant is /nSupplied by renewable energy solar power. "
+      "text": "The electricity needed for the plant is /nSupplied by renewable energy solar power. ",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629120/img1_cgy98g.png"
     },
-    "공기분해": {
+    {
       "title": "Air Decomposition",
-      "text": "Separates nitrogen from air /nTo synthesize ammonia."
+      "text": "Separates nitrogen from air /nTo synthesize ammonia.",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img2_jvhz72.png"
     },
-    "암모니아": {
+    {
+      "title": "Electrolysis",
+      "text": "Hydrogen is separated by electrolyzing water\n using supplied electricity.",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img3_ovxxe9.png"
+    },
+    {
       "title": "Ammonia synthesis",
-      "text": "Green ammonia is produced by reacting nitrogen and /nHydrogen that have completed the process."
+      "text": "Green ammonia is produced by reacting nitrogen and /nHydrogen that have completed the process.",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img4_jzqel5.png"
     },
-    "수전해": {
+    {
       "title": "Transit",
-      "text": "This is completed by transporting the produced /nGreen ammonia to Korea via LNG ships."
+      "text": "This is completed by transporting the produced /nGreen ammonia to Korea via LNG ships.",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img5_gsgol0.png"
     }
-  },
+  ],
 
-  "contents2": {
-    "item1": { "title": "Boiler", "text": "Heat production" },
-    "item2": { "title": "Steel", "text": "Raw fuel conversion" },
-    "item3": { "title": "Coal-fired power generation", "text": "Raw material briquette conversion" }
-  },
+  "itemsTitle": "Direct utilization",
+
+  "items": [
+    {
+      "title": "Boiler",
+      "text": "Heat production",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700634753/item-img1_d1dzzk.png"
+    },
+    {
+      "title": "Steel",
+      "text": "Raw fuel conversion",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700634753/item-img2_zdbnku.png"
+    },
+    {
+      "title": "Coal-fired power generation",
+      "text": "Raw material briquette conversion",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700634753/item-img3_zqar9r.png"
+    }
+  ],
 
   "ing": {
+    "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700634754/info-img_pskgre.png",
     "title": "Abu Dhabi Hamra,\nGreen ammonia supply hub",
     "text": "LTechUVC is developing a green ammonia plant business after receiving a 2.45 million m2 Green Ammonia plant business site from the U.A.E government."
   }

@@ -18,7 +18,7 @@
     },
     {
       "title": "프로젝트",
-      "menus": [{ "title": "프로젝트", "path": "" }]
+      "menus": [{ "title": "프로젝트", "path": "/projects/list" }]
     },
     {
       "title": "미디어",

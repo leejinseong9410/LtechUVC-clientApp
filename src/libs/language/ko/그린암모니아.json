@@ -1,39 +1,66 @@
 {
   "banner": {
     "title": "그린 암모니아",
-    "subTitle": "온실가스 배출 ZERO 그린암모니아 개발 사업"
+    "subTitle": "온실가스 배출 ZERO 그린암모니아 개발 사업",
+    "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700625685/banner-img_sjgbtt.png"
   },
 
   "title": "“수소 경제를 이끌어갈 새로운 에너지원”",
 
-  "text": "그린암모니아란, 탄소배출이 ZERO 인 수소 경제를 이끌어갈 새로운 에너지원으로써, 이산화탄소 배출 없는 신재생 에너지 형태로 생산된 암모니아를 말합니다. 글로벌 친환경 트랜드에 따라 전 세계 국가 및 조직이 내세운 ‘넷제로 (Net Zero)” 및 “탄소 제로(Carbon Zero)” 목표를 앞당길 새로운 에너지원으로 급부상중 입니다. 아부다비는 현재 그린 수소 생산 기술 및 수소 융 복합 사업에 대한 수요를 가지고 있으며, 한국은 뛰어난 그린 수소 생산 기술과 수소를 통한 발전을 기반으로한 다양한 융 복합 기술을 보유하고 있습니다. 이에 LTechUVC는 수요에 맞춰 그린암모니아 생산 사업을 진행중입니다.",
+  "text": "그린암모니아란, 탄소배출이 ZERO 인 수소 경제를 이끌어갈 새로운 에너지원으로써,\n이산화탄소 배출 없는 신재생 에너지 형태로 생산된 암모니아를 말합니다.\n 글로벌 친환경 트랜드에 따라 전 세계 국가 및 조직이 내세운 ‘넷제로 (Net Zero)”\n 및 “탄소 제로(Carbon Zero)” 목표를 앞당길 새로운 에너지원으로 급부상중 입니다. \n아부다비는 현재 그린 수소 생산 기술 및 수소 융 복합 사업에 대한 수요를 가지고 있으며,\n 한국은 뛰어난 그린 수소 생산 기술과 수소를 통한 발전을 기반으로한 다양한 융 복합 기술을 보유하고 있습니다.\n이에 LTechUVC는 수요에 맞춰 그린암모니아 생산 사업을 진행중입니다.",
 
-  "contents1": {
-    "태양광": {
+  "titleImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700625684/%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3_%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_4_wxz7hm.png",
+
+  "contents": [
+    {
       "title": "태양광",
-      "text": "재생에너지 태양광을 통한 전기 공급으로\n플랜트에 필요한 전기를 충당합니다. "
+      "text": "재생에너지 태양광을 통한 전기 공급으로\n플랜트에 필요한 전기를 충당합니다. ",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629120/img1_cgy98g.png"
     },
-    "공기분해": {
+    {
       "title": "공기분해",
-      "text": "암모니아 합성을 위해 공기에서\n질소를 분리시킵니다"
+      "text": "암모니아 합성을 위해 공기에서\n질소를 분리시킵니다",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img2_jvhz72.png"
     },
-    "암모니아": {
+    {
+      "title": "수전해",
+      "text": "공급된 전기를 통해 물을 전기분해하여\n수소를 분리시킵니다",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img3_ovxxe9.png"
+    },
+    {
       "title": "암모니아 합성",
-      "text": "공정이 완료된 질소와 수소를 반응시켜\n그린암모니아를 생산합니다."
+      "text": "공정이 완료된 질소와 수소를 반응시켜\n그린암모니아를 생산합니다.",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img4_jzqel5.png"
     },
-    "수전해": {
+    {
       "title": "운송",
-      "text": "생산된 그린암모니아를 LNG선을 통해 국내로\n운송하여 완료됩니다."
+      "text": "생산된 그린암모니아를 LNG선을 통해 국내로\n운송하여 완료됩니다.",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img5_gsgol0.png"
     }
-  },
+  ],
 
-  "contents2": {
-    "item1": { "title": "보일러", "text": "열 생산" },
-    "item2": { "title": "제철", "text": "원료 연료 전환" },
-    "item3": { "title": "석탄 화력 발전", "text": "원료 연탄 전환" }
-  },
+  "itemsTitle": "암모니아 직접 활용",
+
+  "items": [
+    {
+      "title": "보일러",
+      "text": "열 생산",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700634753/item-img1_d1dzzk.png"
+    },
+    {
+      "title": "제철",
+      "text": "원료 연료 전환",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700634753/item-img2_zdbnku.png"
+    },
+    {
+      "title": "석탄 화력 발전",
+      "text": "원료 연탄 전환",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700634753/item-img3_zqar9r.png"
+    }
+  ],
 
   "ing": {
+    "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700634754/info-img_pskgre.png",
     "title": "아부다비 함라,\n그린암모니아 공급허브",
     "text": "LTechUVC는 U.A.E 정부 로 부터 245만 m2 규모의 그린암모니아 플랜트 사업부지를 제공받아 그린암모니아 플랜트 사업을 개발하고 있습니다."
   }

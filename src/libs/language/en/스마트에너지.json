@@ -1,24 +1,28 @@
 {
   "banner": {
     "title": "Smart Energy & Fuel Cell",
-    "subTitle": "LTechUVC 'First Step' toward the future in keeping with the era of global warming"
+    "subTitle": "LTechUVC 'First Step' toward the future in keeping with the era of global warming",
+    "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700637034/%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_97110_nupjud.png"
   },
 
   "title": "The healthiest investment for your future\nInnovative eco-friendly energy production device",
 
-  "text": "“Fuel cells” that boast small-scale distributed power generation, eco-friendliness, various fuel types, and fast charging speeds can be found through LTechUVC.",
+  "text": "“Fuel cells” that boast small-scale distributed power generation, eco-friendliness,\nvarious fuel types, and fast charging speeds can be found through LTechUVC.",
 
   "content1": {
+    "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700637032/_%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5_1-2_vceskc.png",
     "title": "Fuel Cell",
     "text": "Fuel cells produce almost no air pollutants compared to existing thermal power generation systems.\nThere is no odor or wastewater discharge, and the effect of noise and electromagnetic waves is low, so it can be installed in urban areas.\nFuel cells are not limited by location, so they have high space efficiency.\nThere is no need for large-scale transmission towers or transmission lines, which has the advantage of reducing power loss during transmission."
   },
 
   "content2": {
+    "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700637034/concept-of-an-energy-storage-system-based-on-electrolysis-of-hydrogen-in-a-clean-environment-with-photovoltaics-wind-farms-and-a-city-in-the-background-3d-rendering_crb5v2.png",
     "title": "Gyeonggi-do Hwaseong Smart Energy Project",
     "text": "The Gyeonggi-do Hwaseong Smart Energy Project is a project in which the largest organizations consisting of local governments, local public enterprises, Korea's largest power generation company, private companies specializing in fuel cells, and global companies collaborate to develop a smart energy town in connection with the Green Digital New Deal policy of Hwaseong-si, Gyeonggi-do."
   },
 
   "content3": {
+    "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700637034/smartEnergy-1_mdkms0.png",
     "title": "Hwaseong-si, Gyeonggi-do & LTechUVC Smart Energy Project",
     "text": "The project is currently scheduled to begin construction after the stock payment is completed (22, 11)."
   }

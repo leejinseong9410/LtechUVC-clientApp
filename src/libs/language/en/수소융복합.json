@@ -1,5 +1,6 @@
 {
   "banner": {
+    "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700655567/%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_97107_lmgmjx.png",
     "title": "Hydrogen Convergence Business",
     "subTitle": "Green energy station using solar power and fuel cells Eco-friendly power generation and eco-friendly charging station"
   },
@@ -8,50 +9,56 @@
 
   "text": "The era of internal combustion engine vehicles, which has been around for over 100 years, is coming to an end, and the era of electric/hydrogen vehicles, or eco-friendly vehicles, is approaching.\nIn line with the global carbon neutral movement, global automobile companies are accelerating the discontinuation of production of internal combustion engine vehicles and the transition to eco-friendly vehicles.\nLTechUVC is keeping pace with the times and establishing itself as a leader in eco-friendly convergence charging stations.",
 
-  "contents1": {
-    "item1": {
+  "titleImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700638545/hydrogen-fuel-car-charging-station-white-color-visual-concept-design_jopcz7.png",
+
+  "contents": [
+    {
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700638546/solar-energy-panels-and-h2-hydrogen-tank-on-the-ground-3d-rendering_zkfzun.png",
       "title": "Solar Panel",
       "text": "20kw solar panel installation"
     },
 
-    "item2": {
+    {
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700638544/loft-cafe-interior-with-white-walls-loft-windows-and-cyan-armchairs-standing-near-coffee-tables-flower-beds-3d-rendering-mock-up_dt93dt.png",
       "title": "Cafe and rest facilities",
       "text": "Convenience stores and cafes that can be used while charging"
     },
 
-    "item3": {
+    {
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700638543/%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_97137_ltnbhp.png",
       "title": "Fuel cell",
       "text": "Installation of a 300 kW PAFC that produces electricity, water, and hydrogen"
     },
 
-    "item4": {
+    {
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700638559/the-driver-of-the-electric-car-inserts-the-electrical-connector-to-charge-the-batteries_vbcotm.png",
       "title": "EV charging station",
       "text": "Charging station using electricity generated from fuel cells and solar power"
     },
 
-    "item5": {
+    {
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700638544/hydrogen-fuel-car-charging-station-white-color-visual-concept-design-1_f2bx4b.png",
       "title": "Hydrogen car charging station",
       "text": "Charging station using hydrogen generated from fuel cell"
     },
 
-    "item6": {
+    {
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700638544/gas-fuel-station-with-clouds-and-blue-sky-generative-ai_zipztp.png",
       "title": "Gas station",
       "text": "Expansion of business scope by reflecting existing gas stations"
     }
-  },
+  ],
   "contents2": {
     "title": "Benefit",
 
     "text": "The hydrogen convergence and convergence business carried out by LTechUVC is as follows \nVarious roles and possibilities can be expected.",
 
-    "item1": "Annual power production of 2,500 MW",
-
-    "item2": "Differentiated Services",
-
-    "item3": "Generate additional revenue",
-
-    "item4": "Complex cultural space",
-
-    "item5": "The role of ‘energy supply station’"
+    "items": [
+      "Annual power production of 2,500 MW",
+      "Differentiated Services",
+      "Generate additional revenue",
+      "Complex cultural space",
+      "The role of ‘energy supply station’"
+    ]
   }
 }

@@ -16,6 +16,14 @@ import ko인사말Lang from 'src/libs/language/ko/인사말.json';
 import en인사말Lang from 'src/libs/language/en/인사말.json';
 import ko비전Lang from 'src/libs/language/ko/비전.json';
 import en비전Lang from 'src/libs/language/en/비전.json';
+import ko그린암모니아Lang from 'src/libs/language/ko/그린암모니아.json';
+import en그린암모니아Lang from 'src/libs/language/en/그린암모니아.json';
+import ko스마트에너지Lang from 'src/libs/language/ko/스마트에너지.json';
+import en스마트에너지Lang from 'src/libs/language/en/스마트에너지.json';
+import ko수소융복합Lang from 'src/libs/language/ko/수소융복합.json';
+import en수소융복합Lang from 'src/libs/language/en/수소융복합.json';
+import koContentsLang from 'src/libs/language/ko/contents.json';
+import enContentsLang from 'src/libs/language/en/contents.json';
 
 //components
 import Header from './Header';
@@ -43,6 +51,10 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
         contactUs: enContactUsLang,
         인사말: en인사말Lang,
         비전: en비전Lang,
+        그린암모니아: en그린암모니아Lang,
+        스마트에너지: en스마트에너지Lang,
+        수소융복합: en수소융복합Lang,
+        콘텐츠: enContentsLang,
       });
     } else {
       setIsLanguage({
@@ -52,6 +64,10 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
         contactUs: koContactUsLang,
         인사말: ko인사말Lang,
         비전: ko비전Lang,
+        그린암모니아: ko그린암모니아Lang,
+        스마트에너지: ko스마트에너지Lang,
+        수소융복합: ko수소융복합Lang,
+        콘텐츠: koContentsLang,
       });
     }
   }, [isLangType]);

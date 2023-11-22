@@ -3,8 +3,8 @@ import { MQ } from './media';
 
 export const ContainerTheme = (): Interpolation<Theme> => {
   return {
-    paddingTop: 100,
+    paddingTop: 120,
     paddingBottom: 180,
-    [MQ[3]]: { paddingTop: 30, paddingBottom: 80 },
+    [MQ[3]]: { paddingTop: 50, paddingBottom: 80 },
   };
 };

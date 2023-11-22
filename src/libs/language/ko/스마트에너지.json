@@ -1,24 +1,28 @@
 {
   "banner": {
     "title": "스마트에너지 & 연료전지",
-    "subTitle": "지구온난화 시대의 발맞춰 미래를 향한 LTechUVC의 첫번째 발걸음"
+    "subTitle": "지구온난화 시대의 발맞춰 미래를 향한 LTechUVC의 첫번째 발걸음",
+    "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700637034/%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_97110_nupjud.png"
   },
 
   "title": "미래를 위한 가장 건강한 투자\n혁신적 친환경 에너지 생산장치",
 
-  "text": "소규모 분산발전, 친환경, 다양한 연료의 종류, 빠른 충전속도를 자랑하는 “연료전지”를 LTechUVC를 통해 만나볼 수 있습니다.",
+  "text": "소규모 분산발전, 친환경, 다양한 연료의 종류,\n 빠른 충전속도를 자랑하는 “연료전지”를 LTechUVC를 통해 만나볼 수 있습니다.",
 
   "content1": {
+    "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700637032/_%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5_1-2_vceskc.png",
     "title": "연료전지(Fuel Cell)",
     "text": "연료전지는 기존 화력발전 시스템에 비해 대기오염 물질이 거의 발생하지 않습니다.\n악취와 오폐수 배출이 없고 소음과 전자파의 영향이 적어 도심지에 설치가 가능합니다.\n연료전지는 입지 제약을 받지 않아 공간 효율성이 높습니다.\n대규모 송전탑이나 송전선이 불필요하여 송전 중의 전력 손실이 적은 이점이 있습니다."
   },
 
   "content2": {
+    "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700637034/concept-of-an-energy-storage-system-based-on-electrolysis-of-hydrogen-in-a-clean-environment-with-photovoltaics-wind-farms-and-a-city-in-the-background-3d-rendering_crb5v2.png",
     "title": "화성 스마트 에너지 사업",
     "text": "화성 스마트 에너지 사업은 경기도 화성시의 그린 디지털 뉴딜 정책과 연계한 스마트 에너지 타운 개발을 위해 지자체, 지방공기업, 국내 최대 발전사, 연료전지 전문 민간 기업, 글로벌 기업으로 구성된 최대 규모의 기관이 협력한 사업입니다."
   },
 
   "content3": {
+    "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700637034/smartEnergy-1_mdkms0.png",
     "title": "경기도 화성시 & LTechUVC 스마트 에너지 사업",
     "text": "사업은 현재(22,11) 주금 납입 완료 후 착공 진행 예정입니다."
   }

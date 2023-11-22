@@ -30,6 +30,7 @@ import { Tab } from './tab/Tab';
 import { TxtTab } from './tab/TxtTab';
 import { IconTab } from './tab/IconTab';
 import { ScrollTopTab } from './tab/ScrollTopTab';
+import { LinkHref } from './tab/LinkHref';
 
 //typography
 import { Txt } from './typograhy/Txt';
@@ -86,4 +87,5 @@ export {
   Dialog,
   BottomSheet,
   CalenderModal,
+  LinkHref,
 };
