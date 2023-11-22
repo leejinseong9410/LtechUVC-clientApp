@@ -10,6 +10,7 @@ import { Spacing } from './layout/Spacing';
 import { Layer } from './layout/Layer';
 import { Items, Item } from './layout/Items';
 import { BoxShadow } from './layout/View';
+import { BackgroundImgBox } from './layout/BackgroundImgBox';
 import { Accordion, AccordionPanel } from './layout/Accordion';
 import { DragScrollContainer } from './layout/DragScrollContainer';
 
@@ -61,6 +62,7 @@ export {
   Row,
   Column,
   Padding,
+  BackgroundImgBox,
   Layer,
   LoadingSpinner,
   Input,

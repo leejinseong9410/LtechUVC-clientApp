@@ -1,6 +1,9 @@
-import { Container } from '@/_ui_libs/_index';
 import React from 'react';
 
+//libs
+import { Container } from '@/_ui_libs/_index';
+
+//
 export default function Section1() {
   return (
     <Container maxWidth={1440} padding={{ horizontal: 20, top: 200, bottom: 240 }}>

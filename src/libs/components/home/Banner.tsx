@@ -16,8 +16,8 @@ export default function Banner() {
   const lang = useRecoilValue(langAtom);
   const [activeVideo, setActiveVideo] = useState(0);
   const videos = [
-    'https://res.cloudinary.com/dbh6ubpzm/video/upload/v1700543334/89b863b8-bc34-4269-ad4c-09e81e2f5661_kuyjym.mp4',
-    'https://res.cloudinary.com/dbh6ubpzm/video/upload/v1700542875/second_fenqcn.mp4',
+    'https://res.cloudinary.com/dp0gh7jel/video/upload/v1700550433/89b863b8-bc34-4269-ad4c-09e81e2f5661_ctniyo.mp4',
+    'https://res.cloudinary.com/dp0gh7jel/video/upload/v1700550442/second_gwp06b.mp4',
   ];
 
   const switchVideo = () => {

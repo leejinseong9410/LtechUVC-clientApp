@@ -17,8 +17,9 @@ export const langAtom = atom<any>({
   default: {
     nav: null,
     home: null,
-    그린암모니아: null,
     contactUs: null,
     인사말: null,
+    비전: null,
+    그린암모니아: null,
   },
 });

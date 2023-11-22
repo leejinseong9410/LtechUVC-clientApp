@@ -14,6 +14,8 @@ import koContactUsLang from 'src/libs/language/ko/contactUs.json';
 import enContactUsLang from 'src/libs/language/en/contactUs.json';
 import ko인사말Lang from 'src/libs/language/ko/인사말.json';
 import en인사말Lang from 'src/libs/language/en/인사말.json';
+import ko비전Lang from 'src/libs/language/ko/비전.json';
+import en비전Lang from 'src/libs/language/en/비전.json';
 
 //components
 import Header from './Header';
@@ -40,6 +42,7 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
         home: enHomeLang,
         contactUs: enContactUsLang,
         인사말: en인사말Lang,
+        비전: en비전Lang,
       });
     } else {
       setIsLanguage({
@@ -48,6 +51,7 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
         home: koHomeLang,
         contactUs: koContactUsLang,
         인사말: ko인사말Lang,
+        비전: ko비전Lang,
       });
     }
   }, [isLangType]);
