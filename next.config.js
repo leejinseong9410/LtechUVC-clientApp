@@ -10,14 +10,14 @@ const withPWA = require('next-pwa')({
   disable: !isProduction, // 배포할때엔 활성화 하세요
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://next-typescript-tamplate.vercel.app/';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ltk-uvc.com/';
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   minimumCacheTTL: 60,
 
-  siteUrl: 'https://next-typescript-tamplate.vercel.app/',
+  siteUrl: 'https://www.ltk-uvc.com/',
   additionalSitemaps: [`${siteUrl}server-sitemap.xml`],
   generateRobotsTxt: true,
   sitemapSize: 7000,

@@ -15,11 +15,11 @@ function SEO({ title, description, image }: SEOProps) {
           ? description
           : 'LTechUVC는 그린 암모니아, 그린 수소, 연료전지 사업 등 탄소중립을 선도하는 친환경 에너지 기업입니다'
       } // 50~160자 이하
-      canonical="www.ltk-uvc.com"
+      canonical="https://www.ltk-uvc.com"
       openGraph={{
         type: 'website',
         locale: 'ko_KR',
-        url: 'www.ltk-uvc.com',
+        url: 'https://www.ltk-uvc.com',
         title: title ? `${title} | 엘텍유브이씨, LTechUVC` : '엘텍유브이씨, LTechUVC',
         description: description
           ? description
@@ -37,7 +37,7 @@ function SEO({ title, description, image }: SEOProps) {
       twitter={{
         cardType: 'summary_large_image', //4096x4096 이하 2:1
         handle: '엘텍유브이씨, LTechUVC',
-        site: 'www.ltk-uvc.com',
+        site: 'https://www.ltk-uvc.com',
       }}
     />
   );

@@ -2,7 +2,6 @@ import type { AppProps } from 'next/app';
 import { useState } from 'react';
 
 //hooks
-import { SessionProvider } from 'next-auth/react';
 import { RecoilRoot } from 'recoil';
 import { dehydrate, Hydrate, QueryClient, QueryClientProvider } from 'react-query';
 

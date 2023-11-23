@@ -59,9 +59,7 @@ export default function List() {
                 gap={14}
                 css={{
                   flex: '0 0 calc(33.333% - 20px)',
-                  [MQ[1]]: {
-                    flex: '0 0 calc(50% - 15px)',
-                  },
+                  [MQ[1]]: { flex: '0 0 calc(50% - 15px)' },
                 }}
               >
                 <Img src={item?.img} alt={item?.title} screenRatio={{ x: 4, y: 3 }} />
