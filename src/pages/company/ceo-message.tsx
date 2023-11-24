@@ -15,8 +15,8 @@ import { langAtom } from '@/libs/atoms/widgets-atom';
 import { ceoImg, cfoImg } from '@/libs/assets/images';
 
 //components
-import BannerTitle from '@/libs/components/_layout/BannerTitle';
-import ContentView from '@/libs/components/_layout/ContentView';
+import BannerTitle from '@/libs/components/_custom/BannerTitle';
+import ContentView from '@/libs/components/_custom/ContentView';
 import SEO from '@/seo.config';
 
 //

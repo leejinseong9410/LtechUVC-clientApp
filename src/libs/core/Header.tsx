@@ -146,7 +146,7 @@ export default function Header() {
           css={MenusBoxTheme()}
           align="center"
         >
-          <Menus />
+          <Menus onCancelHover={() => setIsHovered(false)} />
         </Wrap>
       )}
     </>

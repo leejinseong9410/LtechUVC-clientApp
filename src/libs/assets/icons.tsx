@@ -10,6 +10,7 @@ import DirectIcon from 'public/icons/direct-icon.svg';
 import ProfileIcon from 'public/icons/profile-icon.svg';
 import LangIcon from 'public/icons/lang-icon.svg';
 import YoutubeIcon from 'public/icons/youtube-icon.svg';
+import TimeIcon from 'public/icons/time-icon.svg';
 
 export {
   ToastIcon,
@@ -24,4 +25,5 @@ export {
   ProfileIcon,
   LangIcon,
   YoutubeIcon,
+  TimeIcon,
 };

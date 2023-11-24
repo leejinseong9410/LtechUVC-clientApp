@@ -22,8 +22,8 @@ import { langAtom } from '@/libs/atoms/widgets-atom';
 
 //components
 import SEO from '@/seo.config';
-import ContentView from '@/libs/components/_layout/ContentView';
-import BannerTitle from '@/libs/components/_layout/BannerTitle';
+import ContentView from '@/libs/components/_custom/ContentView';
+import BannerTitle from '@/libs/components/_custom/BannerTitle';
 
 //
 export default function GeenAmmonia() {

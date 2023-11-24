@@ -45,7 +45,10 @@ export default function Footer() {
         </Items>
 
         <Column margin={{ top: 60 }} gap={20}>
-          <Link href="https://www.youtube.com/channel/UCaypchzm47bpQPlY0Cr1wzw?app=desktop">
+          <Link
+            href="https://www.youtube.com/channel/UCaypchzm47bpQPlY0Cr1wzw?app=desktop"
+            target="_blank"
+          >
             <YoutubeIcon width="90px" />
           </Link>
           <Logo width="120px" fill={colors.keyColor} />

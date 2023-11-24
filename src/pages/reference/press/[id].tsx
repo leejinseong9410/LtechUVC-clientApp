@@ -1,8 +1,8 @@
 import React from 'react';
 
 //libs
-import { Container, Img, Row, Section, Spacing, Txt, TxtSpan } from '@/_ui_libs/_index';
-import { MQ, colors } from '../../libs/themes/_index';
+import { Column, Container, Img, Row, Section, Spacing, Txt, TxtSpan } from '@/_ui_libs/_index';
+import { MQ, colors } from '@/libs/themes/_index';
 
 //assets
 import { TimeIcon } from '@/libs/assets/icons';
@@ -28,7 +28,8 @@ export default function Detail() {
         css={{ [MQ[3]]: { padding: '40px 20px 60px' } }}
       >
         <Txt as="h1" size={26}>
-          프로젝트 타이틀 프로젝트 타이틀 프로젝트 타이틀
+          프로젝트 타이틀 프로젝트 타이틀 프로젝트 타이틀 프로젝트 타이틀 프로젝트 타이틀 프로젝트
+          타이틀
         </Txt>
 
         <Txt padding={{ top: 20, bottom: 24 }} color={colors.grey800}>
@@ -48,10 +49,16 @@ export default function Detail() {
 
         <Spacing size={40} />
 
-        <Img
-          src="https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img3_ovxxe9.png"
-          alt=""
-        />
+        <Column gap={10}>
+          <Img
+            src="https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img3_ovxxe9.png"
+            alt=""
+          />
+          <Img
+            src="https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img3_ovxxe9.png"
+            alt=""
+          />
+        </Column>
 
         <Spacing size={40} />
         <BackTab />

@@ -11,7 +11,7 @@ import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { drawerAtom, langAtom } from '@/libs/atoms/widgets-atom';
 
 //
-export default function Menus({ handleCloseDrawer }: { handleCloseDrawer?: any }) {
+export default function Menus({ onCancelHover }: { onCancelHover?: any }) {
   const setIsDrawer = useSetRecoilState(drawerAtom);
   const isLang = useRecoilValue(langAtom);
   const menu = isLang?.nav?.category;
@@ -35,7 +35,10 @@ export default function Menus({ handleCloseDrawer }: { handleCloseDrawer?: any }
               key={el?.title}
               href={el?.path}
               css={LinkTheme()}
-              onClick={() => setIsDrawer(false)}
+              onClick={() => {
+                setIsDrawer(false);
+                onCancelHover();
+              }}
             >
               {el.title}
             </Link>

@@ -7,6 +7,9 @@ import { dehydrate, Hydrate, QueryClient, QueryClientProvider } from 'react-quer
 
 //style
 import '@/styles/globals.css';
+import '@/styles/pagination.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 //components
 import AppLayout from '@/libs/core/App';

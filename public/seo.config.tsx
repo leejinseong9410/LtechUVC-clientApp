@@ -29,7 +29,7 @@ function SEO({ title, description, image }: SEOProps) {
           {
             url: image
               ? image
-              : 'https://imagedelivery.net/vJSpkH6oHM7zquolzolo7A/77550435-1cc9-4b42-4519-3cd83f149b00/public',
+              : 'https://res.cloudinary.com/dp0gh7jel/image/upload/v1700796847/iPhone_14_Pro_1_kax2ix.png',
             alt: 'LTechUVC는 그린 암모니아, 그린 수소, 연료전지 사업 등 탄소중립을 선도하는 친환경 에너지 기업입니다',
           },
         ], // 16:9 , 1200px 이하

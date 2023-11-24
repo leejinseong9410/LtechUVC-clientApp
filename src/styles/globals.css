@@ -191,3 +191,8 @@ input::-webkit-search-results-decoration {
 .react-datepicker-wrapper {
   width: 100%;
 }
+
+/* swiper-dots */
+.swiper-pagination-bullets {
+  margin-bottom: 6px;
+}

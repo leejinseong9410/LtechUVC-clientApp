@@ -1,7 +1,17 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 
 //libs
-import { Button, Column, Container, Form, Img, Input, Section, Txt } from '@/_ui_libs/_index';
+import {
+  Button,
+  Column,
+  Container,
+  Form,
+  Img,
+  Input,
+  LoadingLayer,
+  Section,
+  Txt,
+} from '@/_ui_libs/_index';
 import { ContainerTheme, MQ, colors, fontSize } from '@/libs/themes/_index';
 import { regEx } from '@/libs/utils/regEx';
 
@@ -14,24 +24,56 @@ import contactUsImg from 'public/images/contactUs-img.png';
 
 //conponents
 import SEO from '@/seo.config';
+import { useMutation } from 'react-query';
+import { createContactUs } from '@/_https/post';
+import { AlartSnackbar } from '@/libs/components/_custom/Snackbar';
 
 //
 export default function contactUs() {
   const lang = useRecoilValue(langAtom);
   const txt = lang.contactUs;
-  const [isValues, setIsValues] = useState({ name: '', email: '', title: '', context: '' });
-  const isLoading = true;
+
+  const fields = { name: '', email: '', title: '', context: '' };
+  const [isValues, setIsValues] = useState(fields);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setIsValues({ ...isValues, [name]: value });
   };
 
-  // if (isLoading) return <LoadingLayer />;
+  const { mutate: onCreate } = useMutation(
+    () =>
+      createContactUs({
+        name: isValues.name,
+        email: isValues.email,
+        title: isValues.title,
+        context: isValues.context,
+      }),
+    {
+      onSuccess: (data: any) => {
+        console.log(data);
+        setIsLoading(false);
+        setIsSuccess(true);
+        setIsValues(fields);
+      },
+    },
+  );
+
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+    onCreate();
+  };
 
   return (
     <>
+      {isLoading && <LoadingLayer />}
+      <AlartSnackbar view={isSuccess} onCancel={() => setIsSuccess(false)} />
+
       <SEO title={txt?.title} />
+
       <Section>
         <Container maxWidth={560} padding={{ horizontal: 20 }} css={ContainerTheme()}>
           <Img src={contactUsImg} alt="contactUs" />
@@ -46,7 +88,7 @@ export default function contactUs() {
             </Txt>
           </Column>
 
-          <Form gap={20}>
+          <Form gap={20} onSubmit={onSubmit}>
             {/* 이름 */}
             <Input label={txt?.label1} labelEdge="*">
               <Input.TextField
