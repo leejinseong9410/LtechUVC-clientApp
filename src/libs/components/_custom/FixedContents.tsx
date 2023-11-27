@@ -62,7 +62,7 @@ export default function FixedContents({
 
         <Spacing size={16} />
 
-        <Txt size={14} color={colors.grey800}>
+        <Txt size={14} color={colors.grey800} ellipsis={{ ellipsis: true, line: 4 }}>
           {context}
         </Txt>
       </Column>

@@ -25,7 +25,7 @@ import contactUsImg from 'public/images/contactUs-img.png';
 //conponents
 import SEO from '@/seo.config';
 import { useMutation } from 'react-query';
-import { createContactUs } from '@/_https/post';
+import { fetchCreateContactUs } from '@/_https/apis';
 import { AlartSnackbar } from '@/libs/components/_custom/Snackbar';
 
 //
@@ -45,15 +45,14 @@ export default function contactUs() {
 
   const { mutate: onCreate } = useMutation(
     () =>
-      createContactUs({
+      fetchCreateContactUs({
         name: isValues.name,
         email: isValues.email,
         title: isValues.title,
         context: isValues.context,
       }),
     {
-      onSuccess: (data: any) => {
-        console.log(data);
+      onSuccess: () => {
         setIsLoading(false);
         setIsSuccess(true);
         setIsValues(fields);
@@ -94,6 +93,7 @@ export default function contactUs() {
               <Input.TextField
                 shape="box"
                 name="name"
+                maxLength={10}
                 value={isValues.name}
                 placeholder={txt?.label1_placeholder}
                 onChange={handleOnChange}
