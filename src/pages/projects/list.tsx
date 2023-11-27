@@ -33,7 +33,7 @@ export default function List() {
   if (isLoading) {
     return (
       <>
-        <SEO title={txt?.title} description={txt?.subTitle} />
+        <SEO />
         <Section>
           <BannerTitle
             txtColor="black"

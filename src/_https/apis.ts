@@ -50,7 +50,7 @@ export const fetchGetAllYoutube = async ({ pageToken }: { pageToken: number }) =
 };
 
 //
-/// 보도자료 ? 목록
+/// 보도자료 > 목록
 export const fetchGetAllPress = async ({ pageToken }: { pageToken: number }) => {
   const result = await API.post(`/getAllPress`, { pageToken });
 
@@ -61,6 +61,30 @@ export const fetchGetAllPress = async ({ pageToken }: { pageToken: number }) => 
 /// 보도자료 > 상세
 export const fetchGetPressDetail = async (id: any) => {
   const result = await API.post(`/getPressDetail`, { id });
+
+  return result.data;
+};
+
+//
+/// 공고 > 목록
+export const fetchGetAllNotice = async ({ pageToken = 1 }: { pageToken: number | any }) => {
+  const result = await API.post(`/getAllNoticePages`, { pageToken });
+
+  return result.data;
+};
+
+//
+/// 공고 > 상세
+export const fetchGetNoticeDetail = async (id: any) => {
+  const result = await API.post(`/getNoticeDetail`, { id });
+
+  return result.data;
+};
+
+//
+/// 공고 > 팝업
+export const fetchPopUpNotice = async () => {
+  const result = await API.post(`/getPopUpNotice`, {});
 
   return result.data;
 };

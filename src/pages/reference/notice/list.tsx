@@ -6,24 +6,53 @@ import { Container, Item, Items, Row, Section, Txt, TxtSpan, Wrap } from '@/_ui_
 import { MQ, colors, fontSize } from '@/libs/themes/_index';
 
 //atoms
-import { langAtom } from '@/libs/atoms/widgets-atom';
+import { langAtom, langTypeAtom } from '@/libs/atoms/widgets-atom';
 import { useRecoilValue } from 'recoil';
+
+//utils
+import { moment } from '@/libs/utils/moment';
+
+//hooks
+import { noticeQuery } from '@/_https/query/noticeQuery';
+import Pagination from 'react-js-pagination';
 
 //components
 import SEO from '@/seo.config';
 import BannerTitle from '@/libs/components/_custom/BannerTitle';
-
-//utils
-import { moment } from '@/libs/utils/moment';
-import Pagination from 'react-js-pagination';
+import LoadingSkeleton from '@/libs/components/_custom/LoadingSkeleton';
 
 //
 export default function List() {
   const router = useRouter();
   const { page } = router.query;
 
+  const queryData = noticeQuery();
+  const { data, isLoading } = queryData;
+
   const lang = useRecoilValue(langAtom);
+  const langType = useRecoilValue(langTypeAtom);
   const txt = lang?.콘텐츠?.공고;
+
+  if (isLoading) {
+    return (
+      <>
+        <SEO />
+        <Section>
+          <Container
+            maxWidth={900}
+            padding={{ top: 80, bottom: 100, horizontal: 20 }}
+            css={{ [MQ[3]]: { padding: '40px 20px 60px' } }}
+          >
+            <Txt as="h1" size={40} css={{ [MQ[3]]: { fontSize: fontSize.s28 } }}>
+              {txt?.title}
+            </Txt>
+
+            <LoadingSkeleton />
+          </Container>
+        </Section>
+      </>
+    );
+  }
 
   return (
     <>
@@ -48,29 +77,34 @@ export default function List() {
           </Row>
 
           <Items gap={10} margin={{ top: 16, bottom: 30 }}>
-            <Item
-              cursor="pointer"
-              direction="horizontal"
-              align="start"
-              crossAlign="space-between"
-              gap={20}
-              backgroundColor="#fff"
-              padding={{ all: 14 }}
-              borderRadius={12}
-              boxShadow={{ x: 0, y: 2, blur: 18, color: '#eee' }}
-              onClick={() => router.push(`/reference/notice/1`)}
-              css={{ '&:hover': { boxShadow: 'none' } }}
-            >
-              <Txt ellipsis={{ ellipsis: true, line: 1 }}>asdasdasd</Txt>
-              <TxtSpan>{moment(new Date())}</TxtSpan>
-            </Item>
+            {data?.results?.map((item: any) => (
+              <Item
+                key={item?.id}
+                cursor="pointer"
+                direction="horizontal"
+                align="start"
+                crossAlign="space-between"
+                gap={30}
+                backgroundColor="#fff"
+                padding={{ all: 14 }}
+                borderRadius={12}
+                boxShadow={{ x: 0, y: 2, blur: 18, color: '#eee' }}
+                onClick={() => router.push(`/reference/notice/${item?.id}`)}
+                css={{ '&:hover': { boxShadow: 'none' } }}
+              >
+                <Txt ellipsis={{ ellipsis: true, line: 1 }}>
+                  {langType === 'ko' ? item?.ko_title : item?.en_title}
+                </Txt>
+                <TxtSpan>{moment(item?.date)}</TxtSpan>
+              </Item>
+            ))}
           </Items>
 
           <Wrap align="center">
             <Pagination
               activePage={page ? Number(page) : 1}
               itemsCountPerPage={10}
-              totalItemsCount={12} // data?.count
+              totalItemsCount={data?.count} // data?.count
               pageRangeDisplayed={4}
               hideFirstLastPages={true}
               hideNavigation={true}

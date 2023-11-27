@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { QUERY_KEYS } from '@/libs/utils/queryKeys';
 
 //hooks
-import { useInfiniteQuery, useMutation, useQuery, useQueryClient } from 'react-query';
+import { useInfiniteQuery, useQuery } from 'react-query';
 import { fetchGetAllPress, fetchGetPressDetail } from '../apis';
 import { useObserver } from '@/libs/hooks/useIntersectionObserver';
 

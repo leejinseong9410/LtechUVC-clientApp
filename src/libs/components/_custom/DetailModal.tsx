@@ -7,6 +7,7 @@ import { Column, Layer, Padding, Row, Txt, TxtTab, Wrap } from '@/_ui_libs/_inde
 //atoms
 import { useRecoilValue } from 'recoil';
 import { langTypeAtom } from '@/libs/atoms/widgets-atom';
+import { useRouter } from 'next/router';
 
 // --------------------------------------------
 // -------------- Type Interface --------------
@@ -23,6 +24,7 @@ interface Props extends HTMLAttributes<HTMLElement> {
 // --------------  --------------
 // ------------------------------------
 export function DetailModal({ children, view, onCancel, title, context, ...props }: Props) {
+  const router = useRouter();
   const ref = useRef<HTMLDivElement>(null);
   const langType = useRecoilValue(langTypeAtom);
 
@@ -35,22 +37,22 @@ export function DetailModal({ children, view, onCancel, title, context, ...props
     [view, onCancel],
   );
 
-  useEffect(() => {
-    if (view) {
-      const scrollY = window.scrollY;
+  // useEffect(() => {
+  //   if (view) {
+  //     const scrollY = window.scrollY;
 
-      document.body.style.position = 'fixed';
-      document.body.style.top = `-${scrollY}px`;
-      document.body.style.overflowY = 'hidden';
-    } else {
-      const scrollY = document.body.style.top;
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.overflowY = 'auto';
+  //     document.body.style.position = 'fixed';
+  //     document.body.style.top = `-${scrollY}px`;
+  //     document.body.style.overflowY = 'hidden';
+  //   } else {
+  //     const scrollY = document.body.style.top;
+  //     document.body.style.position = '';
+  //     document.body.style.top = '';
+  //     document.body.style.overflowY = 'auto';
 
-      window.scrollTo(0, parseInt(scrollY || '0') * -1);
-    }
-  }, [view]);
+  //     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  //   }
+  // }, [view]);
 
   useEffect(() => {
     document.addEventListener('mousedown', clickModalOutside);
