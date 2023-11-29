@@ -9,13 +9,17 @@
     "content1": "Green ammonia manufacturing business",
     "content2": "Smart city & fuel cell business",
     "content3": "Hydrogen fusion-composite business",
-    "tabName": "See more"
+    "tabName": "See more",
+    "img1": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700744974/%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3_%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_1_w72l4g.png",
+    "img2": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700745009/10_i0bzge.png",
+    "img3": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700745009/%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5_1_kshns3.png"
   },
 
   "item2": {
     "title": "Last climate warning of 1.5°C",
     "subTitle": "If the Earth's temperature rises by 1.5°C in the future, humanity's future may disappear due to many negative factors such as forest fires caused by heat waves, tsunamis due to melting glaciers, etc. \nLTechUVC is leading the global market as a company that takes the lead in protecting the global environment through carbon neutrality.",
-    "tabName": "Learn more"
+    "tabName": "Learn more",
+    "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1701232784/KakaoTalk_20231109_172635086_uaqsfv.png"
   },
 
   "item3": {
@@ -31,7 +35,7 @@
     "tabName": "See more"
   },
 
-  "PROJECTS": {
+  "item5": {
     "title1": "LTechUVC",
     "title2": "PROJECTS",
     "subTitle": "You can check out LTechUVC /nongoing projects",

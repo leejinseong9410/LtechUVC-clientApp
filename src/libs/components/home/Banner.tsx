@@ -53,7 +53,7 @@ export default function Banner() {
         zIndex={50}
       >
         <Column maxWidth={1400} gap={20} padding={{ all: 20 }}>
-          <Txt as="h1" color={colors.white} css={{ [MQ[3]]: { fontSize: fontSize.s28 } }}>
+          <Txt as="h1" color={colors.white} css={{ [MQ[3]]: { fontSize: fontSize.s34 } }}>
             {lang?.home?.banner?.title}
           </Txt>
 

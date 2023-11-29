@@ -6,6 +6,12 @@ export const drawerAtom = atom<boolean>({
   default: false,
 });
 
+// 메뉴 드로어
+export const menuHoverAtom = atom<boolean>({
+  key: 'menu-hover-atom',
+  default: false,
+});
+
 // 언어
 export const langTypeAtom = atom<'ko' | 'en'>({
   key: 'language-type-atom',

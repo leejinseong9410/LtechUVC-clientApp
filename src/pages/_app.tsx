@@ -10,6 +10,8 @@ import '@/styles/globals.css';
 import '@/styles/pagination.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/free-mode';
 
 //components
 import AppLayout from '@/libs/core/App';

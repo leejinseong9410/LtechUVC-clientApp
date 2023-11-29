@@ -8,11 +8,13 @@ import { MQ, colors } from '@/libs/themes/_index';
 
 //atoms
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { drawerAtom, langAtom } from '@/libs/atoms/widgets-atom';
+import { drawerAtom, langAtom, menuHoverAtom } from '@/libs/atoms/widgets-atom';
 
 //
 export default function Menus({ onCancelHover }: { onCancelHover?: any }) {
   const setIsDrawer = useSetRecoilState(drawerAtom);
+  const setIsHover = useSetRecoilState(menuHoverAtom);
+
   const isLang = useRecoilValue(langAtom);
   const menu = isLang?.nav?.category;
 
@@ -37,7 +39,7 @@ export default function Menus({ onCancelHover }: { onCancelHover?: any }) {
               css={LinkTheme()}
               onClick={() => {
                 setIsDrawer(false);
-                onCancelHover();
+                setIsHover(false);
               }}
             >
               {el.title}

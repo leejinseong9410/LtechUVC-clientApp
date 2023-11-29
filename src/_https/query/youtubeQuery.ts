@@ -1,8 +1,5 @@
 import { useRef } from 'react';
 
-//keys
-import { QUERY_KEYS } from '@/libs/utils/queryKeys';
-
 //hooks
 import { useInfiniteQuery } from 'react-query';
 import { fetchGetAllYoutube } from '../apis';
@@ -15,7 +12,7 @@ export function youtubeQuery() {
   //
   ///  리스트
   const { data, fetchNextPage, isLoading } = useInfiniteQuery(
-    [QUERY_KEYS?.youtube],
+    ['youtube-items'],
     ({ pageParam = 0 }) => fetchGetAllYoutube({ pageToken: pageParam }),
     {
       getNextPageParam: (lastPage) => {

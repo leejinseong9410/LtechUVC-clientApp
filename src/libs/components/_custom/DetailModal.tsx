@@ -18,12 +18,21 @@ interface Props extends HTMLAttributes<HTMLElement> {
   onCancel: () => void;
   title?: string;
   context?: any;
+  maxHeigth?: number;
 }
 
 // ------------------------------------
 // --------------  --------------
 // ------------------------------------
-export function DetailModal({ children, view, onCancel, title, context, ...props }: Props) {
+export function DetailModal({
+  children,
+  view,
+  onCancel,
+  title,
+  context,
+  maxHeigth = 1000,
+  ...props
+}: Props) {
   const router = useRouter();
   const ref = useRef<HTMLDivElement>(null);
   const langType = useRecoilValue(langTypeAtom);
@@ -77,8 +86,9 @@ export function DetailModal({ children, view, onCancel, title, context, ...props
         })}
       >
         <Column
-          maxWidth={768}
-          maxHeight={800}
+          maxWidth={700}
+          maxHeight={maxHeigth}
+          height="100%"
           borderRadius={18}
           backgroundColor="#ffffff"
           boxShadow={{ x: 0, y: 2, blur: 20, color: 'rgba(0,0,0,0.1' }}

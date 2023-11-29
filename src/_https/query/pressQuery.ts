@@ -1,9 +1,6 @@
 import { useRef } from 'react';
 import { useRouter } from 'next/router';
 
-//keys
-import { QUERY_KEYS } from '@/libs/utils/queryKeys';
-
 //hooks
 import { useInfiniteQuery, useQuery } from 'react-query';
 import { fetchGetAllPress, fetchGetPressDetail } from '../apis';
@@ -17,7 +14,7 @@ export function pressQuery() {
   //
   ///  데이터 리스트
   const { data, fetchNextPage, isLoading } = useInfiniteQuery(
-    [QUERY_KEYS.press],
+    ['press-items'],
     ({ pageParam = 0 }) => fetchGetAllPress({ pageToken: pageParam }),
     {
       getNextPageParam: (lastPage) => {
@@ -54,7 +51,7 @@ export function pressQuery() {
   //
   /// 프로젝트 > 상세
   const { data: detailData, isLoading: detailLoading } = useQuery(
-    [QUERY_KEYS.pressDetail],
+    ['press-detail'],
     () => fetchGetPressDetail(router.query.id),
     { enabled: !!router.query.id },
   );

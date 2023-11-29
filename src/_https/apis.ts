@@ -1,6 +1,14 @@
 import { API } from './_config';
 
 //
+/// 홈
+export const fetchGetAllHomeItmes = async () => {
+  const result = await API.post(`/home/getAllItems`, {});
+
+  return result.data;
+};
+
+//
 /// 문의하기
 export const fetchCreateContactUs = async ({
   name,

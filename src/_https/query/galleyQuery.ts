@@ -1,8 +1,5 @@
 import { useRef } from 'react';
 
-//keys
-import { QUERY_KEYS } from '@/libs/utils/queryKeys';
-
 //hooks
 import { useInfiniteQuery } from 'react-query';
 import { fetchGetAllGallery } from '../apis';
@@ -15,7 +12,7 @@ export function galleryQuery() {
   //
   ///  리스트
   const { data, fetchNextPage, isLoading } = useInfiniteQuery(
-    [QUERY_KEYS?.gallery],
+    ['gellary-items'],
     ({ pageParam = 0 }) => fetchGetAllGallery({ pageToken: pageParam }),
     {
       getNextPageParam: (lastPage) => {

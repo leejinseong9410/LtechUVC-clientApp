@@ -6,12 +6,14 @@ import {
   Container,
   Img,
   Input,
+  LoadingSpinner,
   Row,
   Section,
   Spacing,
   Txt,
   TxtSpan,
   TxtTab,
+  Wrap,
 } from '@/_ui_libs/_index';
 import { MQ, colors } from '@/libs/themes/_index';
 
@@ -23,17 +25,27 @@ import { DetailModal } from '@/libs/components/_custom/DetailModal';
 
 //atoms
 import { useRecoilValue } from 'recoil';
-import { langTypeAtom } from '@/libs/atoms/widgets-atom';
+import { langAtom, langTypeAtom } from '@/libs/atoms/widgets-atom';
 import { noticeQuery } from '../_https/query/noticeQuery';
+import { homeQuery } from '@/_https/query/homeQuery';
+import Section2 from '@/libs/components/home/Section2';
+import Contents1 from '@/libs/components/home/Contents1';
+import Contents3 from '@/libs/components/home/Contents3';
+import Contents2 from '@/libs/components/home/Contents2';
 
 //
 export default function Index() {
   const router: NextRouter = useRouter();
   const [isPopUp, setIsPopUp] = useState(true);
-  const langType = useRecoilValue(langTypeAtom);
 
+  const lang = useRecoilValue(langAtom);
+
+  const homeQueryData = homeQuery();
+  const { data, isLoading } = homeQueryData;
   const queryData = noticeQuery();
   const { alartData } = queryData;
+
+  console.log(data);
 
   return (
     <>
@@ -42,14 +54,44 @@ export default function Index() {
       <Section>
         <Banner />
 
-        {/* 사업영역 */}
-        <Section1 />
+        <Wrap
+          maxWidth={1440}
+          gap={200}
+          padding={{ horizontal: 20, vertical: 200 }}
+          css={{ [MQ[2]]: { padding: '90px 20px', rowGap: 120 } }}
+        >
+          {/* 사업영역 */}
+          <Section1 txt={lang?.home?.item1} />
 
-        {/* 마지막 1.5C */}
+          {/* 마지막 1.5C */}
+          <Section2 txt={lang?.home?.item2} />
+        </Wrap>
+
+        {isLoading ? (
+          <Wrap align="center" padding={{ top: 80, bottom: 160 }} gap={24}>
+            <LoadingSpinner />
+            <Txt size={16} color="#aaa">
+              Loading ...
+            </Txt>
+          </Wrap>
+        ) : (
+          <Wrap
+            maxWidth={1920}
+            gap={200}
+            padding={{ top: 80, bottom: 160 }}
+            css={{ [MQ[2]]: { padding: '40px 0 60px', rowGap: 100 } }}
+          >
+            <Contents1 txt={lang?.home?.item3} data={data?.youtube} />
+
+            <Contents2 txt={lang?.home?.item4} data={data?.press} />
+
+            <Contents3 txt={lang?.home?.item5} data={data?.project} />
+          </Wrap>
+        )}
       </Section>
 
       {/* 팝업 */}
-      {alartData?.popUpData && (
+      {/* {alartData?.popUpData && (
         <DetailModal
           title={langType === 'ko' ? alartData?.result?.ko_title : alartData?.result?.en_title}
           context={
@@ -79,7 +121,7 @@ export default function Index() {
             borderRadius="0 0 16px 16px"
           />
         </DetailModal>
-      )}
+      )} */}
     </>
   );
 }

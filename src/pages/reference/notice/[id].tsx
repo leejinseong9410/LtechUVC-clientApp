@@ -43,7 +43,7 @@ export default function Detail() {
         <Img
           src="https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img3_ovxxe9.png"
           alt=""
-          // objectFit="contain"
+          objectFit="contain"
           screenRatio={{ x: 3, y: 4 }}
         />
 

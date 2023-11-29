@@ -21,7 +21,7 @@ import LangBox from '../components/common/LangBox';
 
 //atoms
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { drawerAtom, langTypeAtom } from '../atoms/widgets-atom';
+import { drawerAtom, langTypeAtom, menuHoverAtom } from '../atoms/widgets-atom';
 
 //
 export default function Header() {
@@ -31,7 +31,7 @@ export default function Header() {
 
   const languageType = useRecoilValue(langTypeAtom);
   const [isDrawer, setIsDrawer] = useRecoilState(drawerAtom);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useRecoilState(menuHoverAtom);
   const [isClick, setIsClick] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
@@ -146,7 +146,7 @@ export default function Header() {
           css={MenusBoxTheme()}
           align="center"
         >
-          <Menus onCancelHover={() => setIsHovered(false)} />
+          <Menus />
         </Wrap>
       )}
     </>

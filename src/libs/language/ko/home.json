@@ -10,18 +10,22 @@
     "content1": "그린암모니아 제조사업",
     "content2": "스마트시티 & 연료전지 사업",
     "content3": "수소 융 ▪︎ 복합 사업",
-    "tabName": "더보기"
+    "tabName": "더보기",
+    "img1": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700744974/%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3_%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_1_w72l4g.png",
+    "img2": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700745009/10_i0bzge.png",
+    "img3": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700745009/%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5_1_kshns3.png"
   },
 
   "item2": {
     "title": "마지막 기후경고 1.5℃",
     "subTitle": "앞으로 지구의 온도가 1.5°C 상승하게 될경우 폭염으로 인한 산불 빙하가 녹아 밀려오는 해일등 많은 악재 들로 인한 인류의 미래가 없어질수 있습니다. \nLTechUVC 는 탄소중립을 통한 지구환경에 앞장서는 기업으로 글로벌 시장을 선도하고 있습니다",
-    "tabName": "자세히 보기"
+    "tabName": "자세히 보기",
+    "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1701232784/KakaoTalk_20231109_172635086_uaqsfv.png"
   },
 
   "item3": {
-    "title": "엘텍유브이씨 Youtube '엘유TV'를 소개합니다",
-    "subTitle": "주식회사 LTechUVC의 다양한 홍보영상과 친환경 에너지에 \n대한 정보를 유튜브에서 확인할 수 있습니다.",
+    "title": "엘텍유브이씨 Youtube\n'엘유TV'를 소개합니다",
+    "subTitle": "주식회사 LTechUVC의 다양한 홍보영상과 \n친환경 에너지에 대한 정보를 유튜브에서 확인할 수 있습니다.",
     "tabName": "더보기"
   },
 
@@ -32,7 +36,7 @@
     "tabName": "더보기"
   },
 
-  "PROJECTS": {
+  "item5": {
     "title1": "엘텍유브이씨",
     "title2": "PROJECTS",
     "subTitle": "주식회사 LTechUVC 의 진행중인 프로젝트를\n 확인할 수 있습니다",

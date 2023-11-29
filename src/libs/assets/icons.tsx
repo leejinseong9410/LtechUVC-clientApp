@@ -11,6 +11,8 @@ import ProfileIcon from 'public/icons/profile-icon.svg';
 import LangIcon from 'public/icons/lang-icon.svg';
 import YoutubeIcon from 'public/icons/youtube-icon.svg';
 import TimeIcon from 'public/icons/time-icon.svg';
+import PrevIcon from 'public/icons/prev-icon.svg';
+import NextIcon from 'public/icons/next-icon.svg';
 
 export {
   ToastIcon,
@@ -26,4 +28,6 @@ export {
   LangIcon,
   YoutubeIcon,
   TimeIcon,
+  PrevIcon,
+  NextIcon,
 };

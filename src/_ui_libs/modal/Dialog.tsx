@@ -70,6 +70,7 @@ export function Dialog({ children, view, onCancel, ...props }: Props) {
         <Column
           maxWidth={380}
           minWidth={300}
+          height="100%"
           padding={{ horizontal: 18, top: 26, bottom: 16 }}
           borderRadius={18}
           backgroundColor="#ffffff"
