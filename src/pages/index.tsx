@@ -39,6 +39,7 @@ export default function Index() {
   const [isPopUp, setIsPopUp] = useState(true);
 
   const lang = useRecoilValue(langAtom);
+  const langType = useRecoilValue(langTypeAtom);
 
   const homeQueryData = homeQuery();
   const { data, isLoading } = homeQueryData;
@@ -71,7 +72,7 @@ export default function Index() {
           <Wrap align="center" padding={{ top: 80, bottom: 160 }} gap={24}>
             <LoadingSpinner />
             <Txt size={16} color="#aaa">
-              Loading ...
+              {langType === 'ko' ? '콘텐츠를 가져오는 중입니다...' : 'Contents Loading ...'}
             </Txt>
           </Wrap>
         ) : (
@@ -91,7 +92,7 @@ export default function Index() {
       </Section>
 
       {/* 팝업 */}
-      {/* {alartData?.popUpData && (
+      {alartData?.popUpData && (
         <DetailModal
           title={langType === 'ko' ? alartData?.result?.ko_title : alartData?.result?.en_title}
           context={
@@ -121,7 +122,7 @@ export default function Index() {
             borderRadius="0 0 16px 16px"
           />
         </DetailModal>
-      )} */}
+      )}
     </>
   );
 }

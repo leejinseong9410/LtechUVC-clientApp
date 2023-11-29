@@ -43,7 +43,10 @@ export default function Vision() {
       <Section>
         <BackgroundImgBox
           imgSrc={
-            (hover1 && txt.bgImg1) || (hover2 && txt.bgImg2) || (hover3 && txt.bgImg3) || txt.bgImg1
+            (hover1 && txt?.bgImg1) ||
+            (hover2 && txt?.bgImg2) ||
+            (hover3 && txt?.bgImg3) ||
+            txt?.bgImg1
           }
           css={{ flex: 1 }}
         >
