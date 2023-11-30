@@ -29,80 +29,112 @@ export default function Contents2({ txt, data }: { txt: any; data: any }) {
 
   return (
     <Row align="start" gap={100} crossGap={40} css={Themes('box')}>
-      <Swiper
-        loop={true}
-        freeMode={true}
-        slidesPerView={3}
-        spaceBetween={30}
-        modules={[FreeMode, Pagination, Navigation]}
-        navigation={{
-          prevEl: prevRefs.current,
-          nextEl: nextRefs.current,
-        }}
-        css={swiperTheme}
-      >
-        {data?.map((item: any) => (
-          <SwiperSlide>
-            <Item
-              cursor="pointer"
-              gap={6}
-              key={item?.id}
-              onClick={() => router.push(`/reference/press/${item?.id}`)}
-            >
-              <Img
-                src={item?.images[0]}
-                alt={langType === 'ko' ? item?.ko_title : item?.en_title}
-                size={{ maxWidth: 400, maxHeight: 300 }}
-                css={{ '&:hover': { boxShadow: '0 5px 20px #999' } }}
-              />
-              <Txt margin={{ top: 10 }} as="strong">
-                {langType === 'ko' ? item?.ko_title : item?.en_title}
-              </Txt>
-              <TxtSpan>{moment(item?.date)}</TxtSpan>
-            </Item>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
-      <Column
-        maxWidth={440}
-        padding={{ horizontal: 20 }}
-        crossAlign="end"
-        css={{ [MQ[0]]: { order: 1 } }}
-      >
-        <Wrap>
-          <Txt as="h3" css={Themes('title1')}>
-            {txt?.title1}
-          </Txt>
-          <Txt as="h3" css={Themes('title2')}>
-            {txt?.title2}
-          </Txt>
-        </Wrap>
-
-        <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')}>
-          {txt?.subTitle}
-        </Txt>
-
-        <Row gap={16}>
-          <Tab
-            variant="border"
-            css={Themes('tab')}
-            onClick={() => router.push('/reference/press/list')}
+      {data?.length > 3 ? (
+        <>
+          <Swiper
+            loop={true}
+            freeMode={true}
+            slidesPerView={3}
+            spaceBetween={30}
+            modules={[FreeMode, Pagination, Navigation]}
+            navigation={{
+              prevEl: prevRefs.current,
+              nextEl: nextRefs.current,
+            }}
+            css={swiperTheme}
           >
-            더보기
-          </Tab>
+            {data?.map((item: any) => (
+              <SwiperSlide>
+                <Item
+                  cursor="pointer"
+                  gap={6}
+                  key={item?.id}
+                  onClick={() => router.push(`/reference/press/${item?.id}`)}
+                >
+                  <Img
+                    src={item?.images[0]}
+                    alt={langType === 'ko' ? item?.ko_title : item?.en_title}
+                    size={{ maxWidth: 400, maxHeight: 300 }}
+                    css={{ '&:hover': { boxShadow: '0 5px 20px #999' } }}
+                  />
+                  <Txt margin={{ top: 10 }} as="strong">
+                    {langType === 'ko' ? item?.ko_title : item?.en_title}
+                  </Txt>
+                  <TxtSpan>{moment(item?.date)}</TxtSpan>
+                </Item>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <Column
+            maxWidth={440}
+            padding={{ horizontal: 20 }}
+            crossAlign="end"
+            css={{ [MQ[0]]: { order: 1 } }}
+          >
+            <Wrap>
+              <Txt as="h3" css={Themes('title1')}>
+                {txt?.title1}
+              </Txt>
+              <Txt as="h3" css={Themes('title2')}>
+                {txt?.title2}
+              </Txt>
+            </Wrap>
 
-          <Row gap={8}>
-            <Tab variant="border" css={Themes('swiperTab')} ref={prevRefs}>
-              <PrevIcon width="22px" />
-            </Tab>
+            <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')}>
+              {txt?.subTitle}
+            </Txt>
 
-            <Tab variant="border" css={Themes('swiperTab')} ref={nextRefs}>
-              <NextIcon width="22px" />
+            <Row gap={16}>
+              <Tab
+                variant="border"
+                css={Themes('tab')}
+                onClick={() => router.push('/reference/press/list')}
+              >
+                더보기
+              </Tab>
+
+              <Row gap={8}>
+                <Tab variant="border" css={Themes('swiperTab')} ref={prevRefs}>
+                  <PrevIcon width="22px" />
+                </Tab>
+
+                <Tab variant="border" css={Themes('swiperTab')} ref={nextRefs}>
+                  <NextIcon width="22px" />
+                </Tab>
+              </Row>
+            </Row>
+          </Column>
+        </>
+      ) : (
+        <Wrap align="center" backgroundColor="#f8f8f8" padding={{ all: 100 }}>
+          <Column
+            maxWidth={440}
+            padding={{ horizontal: 20 }}
+            align="center"
+            css={{ [MQ[0]]: { order: 1 } }}
+          >
+            <Txt as="h3" css={Themes('title1')}>
+              {txt?.title1}
+            </Txt>
+            <Txt as="h3" css={Themes('title2')}>
+              {txt?.title2}
+            </Txt>
+
+            <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')} txtAlign="center">
+              {txt?.subTitle}
+            </Txt>
+
+            <Tab
+              variant="border"
+              maxWidth={260}
+              css={Themes('tab')}
+              onClick={() => router.push('/reference/press/list')}
+            >
+              더보기
             </Tab>
-          </Row>
-        </Row>
-      </Column>
+          </Column>
+        </Wrap>
+      )}
     </Row>
   );
 }

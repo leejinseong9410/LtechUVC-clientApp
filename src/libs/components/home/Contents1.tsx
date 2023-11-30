@@ -27,70 +27,150 @@ export default function Contents1({ txt, data }: { txt: any; data: any }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
+  console.log(data);
+
   return (
     <Row align="start" gap={100} crossGap={40} css={Themes('box')}>
-      <Wrap maxWidth={660} align="end" css={{ [MQ[0]]: { alignItems: 'start' } }}>
-        <Column maxWidth={440} padding={{ horizontal: 20 }} crossAlign="end">
-          <Txt as="h3" css={Themes('title')}>
-            {txt?.title}
-          </Txt>
-
-          <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')}>
-            {txt?.subTitle}
-          </Txt>
-
-          <Row gap={16}>
-            <Tab variant="border" css={Themes('tab')} onClick={() => router.push('/media/youtube')}>
-              더보기
-            </Tab>
-
-            <Row gap={8}>
-              <Tab variant="border" css={Themes('swiperTab')} ref={prevRef}>
-                <PrevIcon width="22px" />
-              </Tab>
-
-              <Tab variant="border" css={Themes('swiperTab')} ref={nextRef}>
-                <NextIcon width="22px" />
-              </Tab>
-            </Row>
-          </Row>
-        </Column>
-      </Wrap>
-
-      <Swiper
-        loop={true}
-        freeMode={true}
-        slidesPerView={3}
-        spaceBetween={30}
-        modules={[FreeMode, Pagination, Navigation]}
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
-        css={swiperTheme}
-      >
-        {data?.map((item: any) => (
-          <SwiperSlide>
-            <Item
-              cursor="pointer"
-              gap={6}
-              key={item?.id}
-              onClick={() => window.open(`${item.link}`, '_blank')}
-            >
-              <Img
-                src={item?.image}
-                alt={langType === 'ko' ? item?.ko_title : item?.en_title}
-                size={{ maxWidth: 400, maxHeight: 300 }}
-                css={{ '&:hover': { boxShadow: '0 5px 20px #999' } }}
-              />
-              <Txt margin={{ top: 10 }} as="strong">
-                {langType === 'ko' ? item?.ko_title : item?.en_title}
+      {data?.length > 3 ? (
+        <>
+          <Wrap maxWidth={660} align="end" css={{ [MQ[0]]: { alignItems: 'start' } }}>
+            <Column maxWidth={440} padding={{ horizontal: 20 }} crossAlign="end">
+              <Txt as="h3" css={Themes('title')}>
+                {txt?.title}
               </Txt>
-              <TxtSpan>{moment(item?.date)}</TxtSpan>
-            </Item>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+
+              <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')}>
+                {txt?.subTitle}
+              </Txt>
+
+              <Row gap={16}>
+                <Tab
+                  variant="border"
+                  css={Themes('tab')}
+                  onClick={() => router.push('/media/youtube')}
+                >
+                  더보기
+                </Tab>
+
+                <Row gap={8}>
+                  <Tab variant="border" css={Themes('swiperTab')} ref={prevRef}>
+                    <PrevIcon width="22px" />
+                  </Tab>
+
+                  <Tab variant="border" css={Themes('swiperTab')} ref={nextRef}>
+                    <NextIcon width="22px" />
+                  </Tab>
+                </Row>
+              </Row>
+            </Column>
+          </Wrap>
+
+          <Swiper
+            loop={true}
+            freeMode={true}
+            slidesPerView={3}
+            spaceBetween={30}
+            modules={[FreeMode, Pagination, Navigation]}
+            navigation={{
+              prevEl: prevRef.current,
+              nextEl: nextRef.current,
+            }}
+            css={swiperTheme}
+          >
+            {data?.map((item: any) => (
+              <SwiperSlide>
+                <Item
+                  cursor="pointer"
+                  gap={6}
+                  key={item?.id}
+                  onClick={() => window.open(`${item.link}`, '_blank')}
+                >
+                  <Img
+                    src={item?.image}
+                    alt={langType === 'ko' ? item?.ko_title : item?.en_title}
+                    size={{ maxWidth: 400, maxHeight: 300 }}
+                    css={{ '&:hover': { boxShadow: '0 5px 20px #999' } }}
+                  />
+                  <Txt margin={{ top: 10 }} as="strong">
+                    {langType === 'ko' ? item?.ko_title : item?.en_title}
+                  </Txt>
+                  <TxtSpan>{moment(item?.date)}</TxtSpan>
+                </Item>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </>
+      ) : (
+        <Column align="center" gap={50}>
+          <Wrap align="center">
+            <Column maxWidth={440} padding={{ horizontal: 20 }} align="center">
+              <Txt as="h3" css={Themes('title')}>
+                {txt?.title}
+              </Txt>
+
+              <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')} txtAlign="center">
+                {txt?.subTitle}
+              </Txt>
+
+              <Row gap={16} crossAlign="center">
+                <Tab
+                  maxWidth={200}
+                  variant="border"
+                  css={Themes('tab')}
+                  onClick={() => router.push('/media/youtube')}
+                >
+                  더보기
+                </Tab>
+
+                <Row gap={8} width="auto">
+                  <Tab variant="border" css={Themes('swiperTab')} ref={prevRef}>
+                    <PrevIcon width="22px" />
+                  </Tab>
+
+                  <Tab variant="border" css={Themes('swiperTab')} ref={nextRef}>
+                    <NextIcon width="22px" />
+                  </Tab>
+                </Row>
+              </Row>
+            </Column>
+          </Wrap>
+
+          <Wrap maxWidth={700} padding={{ horizontal: 20 }}>
+            <Swiper
+              loop={true}
+              spaceBetween={20}
+              modules={[Pagination, Navigation]}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              css={{ width: '100%' }}
+            >
+              {data?.map((item: any) => (
+                <SwiperSlide>
+                  <Item
+                    cursor="pointer"
+                    gap={6}
+                    key={item?.id}
+                    onClick={() => window.open(`${item.link}`, '_blank')}
+                  >
+                    <Img
+                      src={item?.image}
+                      alt={langType === 'ko' ? item?.ko_title : item?.en_title}
+                      css={{ '&:hover': { boxShadow: '0 5px 20px #999' } }}
+                      size={{ maxHeight: 400 }}
+                    />
+                    <Txt margin={{ top: 10 }} as="strong">
+                      {langType === 'ko' ? item?.ko_title : item?.en_title}
+                    </Txt>
+                    <TxtSpan>{moment(item?.date)}</TxtSpan>
+                  </Item>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </Wrap>
+        </Column>
+      )}
     </Row>
   );
 }

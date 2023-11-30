@@ -141,7 +141,7 @@ export default function Gallery() {
 
       {/* 상세 모달 팝업 */}
       <DetailModal
-        maxHeigth={490}
+        maxHeigth={460}
         title={langType === 'ko' ? isDetail?.ko_title : isDetail?.en_title}
         context={<TxtSpan size={14}>{moment(isDetail?.date)}</TxtSpan>}
         view={isDetail.isOpen}
@@ -150,7 +150,7 @@ export default function Gallery() {
         <Swiper
           modules={[Pagination]}
           pagination={{ dynamicBullets: true }}
-          css={{ width: '100%' }}
+          css={{ width: '100%', height: '100%' }}
         >
           {isDetail?.images?.map((item: any, i: number) => (
             <SwiperSlide key={i}>

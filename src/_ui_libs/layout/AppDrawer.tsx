@@ -67,8 +67,8 @@ export const AppDrawer = forwardRef(function AppDrawer(
           safeArea
           ref={ref}
           css={[
-            PaddingTheme({ safeArea: true, padding: { top: 8, left: 0, right: 10 } }),
-            FlexTheme({ direction: 'horizontal', align: 'end', crossAlign: 'end' }),
+            PaddingTheme({ safeArea: true, padding: { all: 8 } }),
+            FlexTheme({ direction: 'horizontal', align: 'end', crossAlign: 'start' }),
             ViewportTheme({
               zIndex: 11,
               width: '100%',

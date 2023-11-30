@@ -5,12 +5,15 @@ import firstVideo from '/public/videos/first.mp4';
 import secondVideo from '/public/videos/second.mp4';
 
 // libs
-import { Column, Row, Txt, Wrap } from '@/_ui_libs/_index';
+import { Column, Row, Txt, TxtSpan, Wrap } from '@/_ui_libs/_index';
 import { MQ, colors, fontSize } from '@/libs/themes/_index';
 
 //atoms
 import { useRecoilValue } from 'recoil';
 import { langAtom } from '@/libs/atoms/widgets-atom';
+import { MouseIcon } from '@/libs/assets/icons';
+import { keyframes } from '@emotion/react';
+import styled from '@emotion/styled';
 
 export default function Banner() {
   const lang = useRecoilValue(langAtom);
@@ -23,6 +26,22 @@ export default function Banner() {
   const switchVideo = () => {
     setActiveVideo(activeVideo === 0 ? 1 : 0);
   };
+
+  const moveUpDown = keyframes`
+  0%, 100% { transform: translateY(-4px); }
+  50% { transform: translateY(4px); }
+`;
+
+  // Create a styled component with the animation
+  const AnimatedText = styled.div`
+    animation: ${moveUpDown} 2s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    position: absolute;
+    bottom: 20px;
+  `;
 
   return (
     <Wrap width="100%" height="100%" minHeight="100vh">
@@ -69,7 +88,9 @@ export default function Banner() {
             {videos.map((_, index) => (
               <div
                 key={index}
+                onClick={() => setActiveVideo(index)}
                 css={{
+                  cursor: 'pointer',
                   width: '40px',
                   height: '10px',
                   backgroundColor: colors.white,
@@ -82,6 +103,13 @@ export default function Banner() {
             ))}
           </Row>
         </Column>
+
+        <AnimatedText>
+          <TxtSpan size={12} color="#eee">
+            Scroll Down
+          </TxtSpan>
+          <MouseIcon width="15px" />
+        </AnimatedText>
       </Column>
     </Wrap>
   );

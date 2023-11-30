@@ -76,44 +76,54 @@ export default function List() {
             <TxtSpan color="#999">{txt?.label2}</TxtSpan>
           </Row>
 
-          <Items gap={10} margin={{ top: 16, bottom: 30 }}>
-            {data?.results?.map((item: any) => (
-              <Item
-                key={item?.id}
-                cursor="pointer"
-                direction="horizontal"
-                align="start"
-                crossAlign="space-between"
-                gap={30}
-                backgroundColor="#fff"
-                padding={{ all: 14 }}
-                borderRadius={12}
-                boxShadow={{ x: 0, y: 2, blur: 18, color: '#eee' }}
-                onClick={() => router.push(`/reference/notice/${item?.id}`)}
-                css={{ '&:hover': { boxShadow: 'none' } }}
-              >
-                <Txt ellipsis={{ ellipsis: true, line: 1 }}>
-                  {langType === 'ko' ? item?.ko_title : item?.en_title}
-                </Txt>
-                <TxtSpan>{moment(item?.date)}</TxtSpan>
-              </Item>
-            ))}
-          </Items>
+          {data?.results?.length === 0 ? (
+            <Wrap align="center" gap={10} padding={{ all: 30 }}>
+              <Txt color="#999">
+                {langType === 'ko' ? '현재 공고가 존재하지 않습니다' : 'COMMING SOON'}
+              </Txt>
+            </Wrap>
+          ) : (
+            <>
+              <Items gap={10} margin={{ top: 16, bottom: 30 }}>
+                {data?.results?.map((item: any) => (
+                  <Item
+                    key={item?.id}
+                    cursor="pointer"
+                    direction="horizontal"
+                    align="start"
+                    crossAlign="space-between"
+                    gap={30}
+                    backgroundColor="#fff"
+                    padding={{ all: 14 }}
+                    borderRadius={12}
+                    boxShadow={{ x: 0, y: 2, blur: 18, color: '#eee' }}
+                    onClick={() => router.push(`/reference/notice/${item?.id}`)}
+                    css={{ '&:hover': { boxShadow: 'none' } }}
+                  >
+                    <Txt ellipsis={{ ellipsis: true, line: 1 }}>
+                      {langType === 'ko' ? item?.ko_title : item?.en_title}
+                    </Txt>
+                    <TxtSpan>{moment(item?.date)}</TxtSpan>
+                  </Item>
+                ))}
+              </Items>
 
-          <Wrap align="center">
-            <Pagination
-              activePage={page ? Number(page) : 1}
-              itemsCountPerPage={10}
-              totalItemsCount={data?.count} // data?.count
-              pageRangeDisplayed={4}
-              hideFirstLastPages={true}
-              hideNavigation={true}
-              onChange={(pageNumber: number) => {
-                router.push({ query: { page: pageNumber } });
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-            />
-          </Wrap>
+              <Wrap align="center">
+                <Pagination
+                  activePage={page ? Number(page) : 1}
+                  itemsCountPerPage={10}
+                  totalItemsCount={data?.count} // data?.count
+                  pageRangeDisplayed={4}
+                  hideFirstLastPages={true}
+                  hideNavigation={true}
+                  onChange={(pageNumber: number) => {
+                    router.push({ query: { page: pageNumber } });
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                />
+              </Wrap>
+            </>
+          )}
         </Container>
       </Section>
     </>

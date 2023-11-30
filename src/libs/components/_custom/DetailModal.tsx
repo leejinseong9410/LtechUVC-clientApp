@@ -8,6 +8,7 @@ import { Column, Layer, Padding, Row, Txt, TxtTab, Wrap } from '@/_ui_libs/_inde
 import { useRecoilValue } from 'recoil';
 import { langTypeAtom } from '@/libs/atoms/widgets-atom';
 import { useRouter } from 'next/router';
+import { MQ } from '@/libs/themes/media';
 
 // --------------------------------------------
 // -------------- Type Interface --------------
@@ -46,23 +47,6 @@ export function DetailModal({
     [view, onCancel],
   );
 
-  // useEffect(() => {
-  //   if (view) {
-  //     const scrollY = window.scrollY;
-
-  //     document.body.style.position = 'fixed';
-  //     document.body.style.top = `-${scrollY}px`;
-  //     document.body.style.overflowY = 'hidden';
-  //   } else {
-  //     const scrollY = document.body.style.top;
-  //     document.body.style.position = '';
-  //     document.body.style.top = '';
-  //     document.body.style.overflowY = 'auto';
-
-  //     window.scrollTo(0, parseInt(scrollY || '0') * -1);
-  //   }
-  // }, [view]);
-
   useEffect(() => {
     document.addEventListener('mousedown', clickModalOutside);
     return () => {
@@ -86,7 +70,7 @@ export function DetailModal({
         })}
       >
         <Column
-          maxWidth={700}
+          maxWidth={600}
           maxHeight={maxHeigth}
           height="100%"
           borderRadius={18}
@@ -119,7 +103,12 @@ export function DetailModal({
             </TxtTab>
           </Row>
 
-          <Wrap height="100%" scroll={{ type: 'scroll', bar: false }}>
+          <Wrap
+            height="100%"
+            scroll={{ type: 'scroll', bar: false }}
+            align="center"
+            crossAlign="center"
+          >
             {children}
           </Wrap>
         </Column>

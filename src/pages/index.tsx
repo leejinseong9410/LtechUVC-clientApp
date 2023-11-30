@@ -78,7 +78,7 @@ export default function Index() {
         ) : (
           <Wrap
             maxWidth={1920}
-            gap={200}
+            gap={160}
             padding={{ top: 80, bottom: 160 }}
             css={{ [MQ[2]]: { padding: '40px 0 60px', rowGap: 100 } }}
           >

@@ -13,6 +13,7 @@ import YoutubeIcon from 'public/icons/youtube-icon.svg';
 import TimeIcon from 'public/icons/time-icon.svg';
 import PrevIcon from 'public/icons/prev-icon.svg';
 import NextIcon from 'public/icons/next-icon.svg';
+import MouseIcon from 'public/icons/mouse-icon.svg';
 
 export {
   ToastIcon,
@@ -30,4 +31,5 @@ export {
   TimeIcon,
   PrevIcon,
   NextIcon,
+  MouseIcon,
 };

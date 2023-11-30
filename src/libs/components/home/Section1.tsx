@@ -25,7 +25,7 @@ export default function Section1({ txt }: { txt: any }) {
           align="center"
           crossAlign="center"
           height="100%"
-          padding={{ all: 30 }}
+          padding={{ vertical: 50, horizontal: 30 }}
           backgroundColor="#F5F6F9"
           borderRadius={10}
         >
@@ -49,14 +49,14 @@ export default function Section1({ txt }: { txt: any }) {
           <Wrap
             align="center"
             height="100%"
-            padding={{ all: 30 }}
+            padding={{ vertical: 50, horizontal: 30 }}
             backgroundColor="#F5F6F9"
             borderRadius={10}
           >
             <Img
               src={txt?.img2}
               alt={txt?.content2}
-              size={{ width: '100%', maxWidth: 320, minHeight: 310 }}
+              size={{ width: '100%', maxWidth: 320 }}
               objectFit="fill"
             />
           </Wrap>
@@ -75,14 +75,14 @@ export default function Section1({ txt }: { txt: any }) {
           <Wrap
             align="center"
             height="100%"
-            padding={{ all: 30 }}
+            padding={{ vertical: 50, horizontal: 30 }}
             backgroundColor="#F5F6F9"
             borderRadius={10}
           >
             <Img
               src={txt?.img3}
               alt={txt?.content3}
-              size={{ width: '100%', maxWidth: 320, minHeight: 310 }}
+              size={{ width: '100%', maxWidth: 320 }}
               objectFit="fill"
             />
           </Wrap>

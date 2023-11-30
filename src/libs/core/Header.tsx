@@ -87,12 +87,21 @@ export default function Header() {
           align="center"
           height="100%"
           crossAlign="space-between"
-          padding={{ left: 16, right: 10 }}
+          padding={{ left: 16, right: 30 }}
         >
-          <Link href="/" css={LogoTheme()}>
-            <Logo width="100%" fill={themeActive('logo')} />
-          </Link>
+          <Row width="auto" align="center" gap={10}>
+            <IconTab
+              onClick={handleActiveDrawer}
+              iconSize={24}
+              css={{ display: 'none', [MQ[1]]: { display: 'flex' } }}
+            >
+              <ToastIcon fill={themeActive('color')} width="100%" height="100%" />
+            </IconTab>
 
+            <Link href="/" css={LogoTheme()}>
+              <Logo width="100%" fill={themeActive('logo')} />
+            </Link>
+          </Row>
           <Items onMouseEnter={() => setIsHovered(true)} css={MenuItemTheme()}>
             {(languageType === 'ko'
               ? ['회사소개', '사업영역', '프로젝트', '미디어', '자료실']
@@ -106,31 +115,21 @@ export default function Header() {
             ))}
           </Items>
 
-          <Row width="auto" align="center" gap={14}>
-            <Row
-              ref={langRef}
-              onClick={() => setIsClick(!isClick)}
-              width="auto"
-              align="center"
-              gap={8}
-              css={{ cursor: 'pointer' }}
-            >
-              <LangIcon width={17} fill={themeActive('langIcon')} css={{ marginTop: 2 }} />
+          <Row
+            ref={langRef}
+            onClick={() => setIsClick(!isClick)}
+            width="auto"
+            align="center"
+            gap={8}
+            css={{ cursor: 'pointer' }}
+          >
+            <LangIcon width={17} fill={themeActive('langIcon')} css={{ marginTop: 2 }} />
 
-              <TxtSpan size={13} color={themeActive('color')}>
-                {languageType === 'ko' ? '한국어' : 'English'}
-              </TxtSpan>
+            <TxtSpan size={13} color={themeActive('color')}>
+              {languageType === 'ko' ? '한국어' : 'English'}
+            </TxtSpan>
 
-              {isClick && <LangBox onClose={() => setIsClick(false)} />}
-            </Row>
-
-            <IconTab
-              onClick={handleActiveDrawer}
-              iconSize={24}
-              css={{ display: 'none', [MQ[1]]: { display: 'flex' } }}
-            >
-              <ToastIcon fill={themeActive('color')} width="100%" height="100%" />
-            </IconTab>
+            {isClick && <LangBox onClose={() => setIsClick(false)} />}
           </Row>
         </Row>
       </AppBar>
