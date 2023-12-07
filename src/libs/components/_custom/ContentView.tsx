@@ -52,12 +52,14 @@ export default function ContentView({
         padding={title_padding}
       >
         {title && (
-          <Txt as="h2" size={38} css={{ [MQ[3]]: { fontSize: 26 } }}>
+          <Txt as="h2" size={38} css={{ [MQ[3]]: { fontSize: 26 } }} data-aos="zoom">
             {title}
           </Txt>
         )}
         {subTitle && (
           <Txt
+            data-aos="zoom"
+            data-aos-delay="100"
             size={18}
             color={colors.grey800}
             lineHeight={1.7}

@@ -45,7 +45,7 @@ export default function Contents3({ txt, data }: { txt: any; data: any }) {
             margin={{ top: 20, bottom: 30 }}
             css={Themes('txt')}
             data-aos="zoom"
-            data-aos-delay="200"
+            data-aos-delay="150"
           >
             {txt?.subTitle}
           </Txt>

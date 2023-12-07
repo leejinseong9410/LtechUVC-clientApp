@@ -43,6 +43,8 @@ export default function GeenAmmonia() {
               padding={{ horizontal: 20 }}
               margin={{ top: 60 }}
               css={{ [MQ[2]]: { marginTop: 40 } }}
+              data-aos="zoom"
+              data-aos-delay="300"
             >
               <Img src={txt?.titleImg} alt={txt?.title} size={{ maxHeight: 700 }} />
             </Wrap>
@@ -50,7 +52,7 @@ export default function GeenAmmonia() {
             {/* --- 각 소개 (태양광 ~ 운송) --- */}
             <Wrap css={contentsInfoTheme('content_wrap')}>
               {txt?.contents?.map((item: any, i: number) => (
-                <Row key={i} css={contentsInfoTheme('info_row_wrap')}>
+                <Row key={i} css={contentsInfoTheme('info_row_wrap')} data-aos="zoom-in-up">
                   <Column css={contentsInfoTheme('infoTxt', i)}>
                     <Txt as="h6" size={32} css={contentsInfoTheme('title')}>
                       {item?.title}
@@ -73,11 +75,18 @@ export default function GeenAmmonia() {
                 size={38}
                 padding={{ horizontal: 20 }}
                 css={{ [MQ[3]]: { fontSize: fontSize.s28 } }}
+                data-aos="zoom"
               >
                 {txt?.contents2?.title}
               </Txt>
 
-              <Txt lineHeight={1.65} txtAlign="center" css={contentsInfoTheme('txt')}>
+              <Txt
+                lineHeight={1.65}
+                txtAlign="center"
+                css={contentsInfoTheme('txt')}
+                data-aos="zoom"
+                data-aos-delay="100"
+              >
                 {txt?.contents2?.text}
               </Txt>
 
@@ -92,6 +101,8 @@ export default function GeenAmmonia() {
               >
                 {txt?.contents2?.items?.map((item: string, i: number) => (
                   <Wrap
+                    data-aos="zoom-up"
+                    data-aos-delay={i + 180}
                     key={i}
                     align="center"
                     crossAlign="center"

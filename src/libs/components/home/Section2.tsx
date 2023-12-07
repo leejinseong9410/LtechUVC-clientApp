@@ -27,7 +27,7 @@ export default function Section2({ txt }: { txt: any }) {
           css={Themes('txt')}
           txtAlign="center"
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="150"
         >
           {txt?.subTitle}
         </Txt>
@@ -36,7 +36,7 @@ export default function Section2({ txt }: { txt: any }) {
           variant="border"
           css={Themes('tab')}
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-delay="250"
           onClick={() => router.push('/company/vision')}
         >
           {txt?.tabName}

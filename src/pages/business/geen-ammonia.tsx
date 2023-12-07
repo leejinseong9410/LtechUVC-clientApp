@@ -56,6 +56,8 @@ export default function GeenAmmonia() {
               css={{ [MQ[2]]: { marginTop: 40 } }}
             >
               <Padding
+                data-aos="zoom"
+                data-aos-delay="300"
                 all={40}
                 backgroundColor={colors.grey100}
                 borderRadius={10}
@@ -73,7 +75,7 @@ export default function GeenAmmonia() {
             {/* --- 각 소개 (태양광 ~ 운송) --- */}
             <Wrap css={contentsInfoTheme('content_wrap')}>
               {txt?.contents?.map((item: any, i: number) => (
-                <Row key={i} css={contentsInfoTheme('info_row_wrap')}>
+                <Row key={i} css={contentsInfoTheme('info_row_wrap')} data-aos="zoom-in-up">
                   <Column css={contentsInfoTheme('infoTxt', i)}>
                     <Txt as="h6" size={32} css={contentsInfoTheme('title')}>
                       {item?.title}
@@ -96,6 +98,7 @@ export default function GeenAmmonia() {
                 size={38}
                 padding={{ horizontal: 20 }}
                 css={{ [MQ[3]]: { fontSize: fontSize.s28 } }}
+                data-aos="zoom"
               >
                 {txt?.itemsTitle}
               </Txt>
@@ -109,6 +112,7 @@ export default function GeenAmmonia() {
                     key={item?.title}
                     minWidth={280}
                     boxShadow={{ x: 0, y: 2, blur: 24, color: '#e2e2e2' }}
+                    data-aos="zoom-out"
                   >
                     <Img src={item?.img} alt={item?.title} borderRadius="18px 18px 0 0" />
 
@@ -148,14 +152,27 @@ export default function GeenAmmonia() {
                 margin={{ top: 50 }}
                 css={{ [MQ[1]]: { marginTop: 0 }, [MQ[2]]: { flexDirection: 'column' } }}
               >
-                <Txt as="h4" color={colors.keyColor} css={{ [MQ[3]]: { fontSize: fontSize.s28 } }}>
+                <Txt
+                  as="h4"
+                  color={colors.keyColor}
+                  css={{ [MQ[3]]: { fontSize: fontSize.s28 } }}
+                  data-aos="zoom"
+                >
                   {txt?.ing?.title}
                 </Txt>
 
-                <Txt css={contentsInfoTheme('txt')}>{txt?.ing?.text}</Txt>
+                <Txt css={contentsInfoTheme('txt')} data-aos="zoom" data-aos-delay="100">
+                  {txt?.ing?.text}
+                </Txt>
               </Column>
 
-              <Img src={txt?.ing?.img} alt={txt?.ing?.title} size={{ maxHeight: 410 }} />
+              <Img
+                src={txt?.ing?.img}
+                alt={txt?.ing?.title}
+                size={{ maxHeight: 410 }}
+                data-aos="zoom"
+                data-aos-delay="200"
+              />
             </Row>
           </Column>
         </ContentView>

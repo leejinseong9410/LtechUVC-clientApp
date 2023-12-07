@@ -47,7 +47,12 @@ export default function CeoMessage() {
               crossAlign="space-between"
               css={{ [MQ[1]]: { flexDirection: 'column' } }}
             >
-              <Column maxWidth={460} gap={14} css={{ [MQ[1]]: { maxWidth: '100%' } }}>
+              <Column
+                maxWidth={460}
+                gap={14}
+                css={{ [MQ[1]]: { maxWidth: '100%' } }}
+                data-aos="fade-up"
+              >
                 <Img src={ceoImg} width={600} alt="LEE JI YOUNG" size={{}} />
 
                 <Row crossAlign="space-between">
@@ -129,7 +134,13 @@ export default function CeoMessage() {
               crossAlign="space-between"
               css={{ [MQ[1]]: { flexDirection: 'column' } }}
             >
-              <Column maxWidth={460} gap={14} css={{ [MQ[1]]: { maxWidth: '100%' } }}>
+              <Column
+                maxWidth={460}
+                gap={14}
+                css={{ [MQ[1]]: { maxWidth: '100%' } }}
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
                 <Img src={cfoImg} width={600} alt="LEE JI YOUNG" />
 
                 <Row crossAlign="space-between">

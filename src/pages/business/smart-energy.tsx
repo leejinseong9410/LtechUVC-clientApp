@@ -35,7 +35,7 @@ export default function SmartEnergy() {
           padding={{ horizontal: 20 }}
         >
           {/* 연료 전지 */}
-          <Column gap={30}>
+          <Column gap={30} data-aos="zoom" data-aos-delay="300">
             <Padding
               all={40}
               backgroundColor={colors.grey100}
@@ -61,7 +61,13 @@ export default function SmartEnergy() {
           </Column>
 
           {/* 화성 스마트 에너지 사업 */}
-          <Column gap={30} margin={{ top: 140 }} css={{ [MQ[3]]: { marginTop: 80 } }}>
+          <Column
+            gap={30}
+            margin={{ top: 140 }}
+            css={{ [MQ[3]]: { marginTop: 80 } }}
+            data-aos="zoom"
+            data-aos-delay="100"
+          >
             <Img
               src={txt?.content2.img}
               alt={txt?.content2.img}
@@ -81,7 +87,13 @@ export default function SmartEnergy() {
           </Column>
 
           {/* 사업 */}
-          <Column gap={30} margin={{ top: 140 }} css={{ [MQ[3]]: { marginTop: 80 } }}>
+          <Column
+            gap={30}
+            margin={{ top: 140 }}
+            css={{ [MQ[3]]: { marginTop: 80 } }}
+            data-aos="zoom"
+            data-aos-delay="100"
+          >
             <Img
               src={txt?.content3.img}
               alt={txt?.content3.img}

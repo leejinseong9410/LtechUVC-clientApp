@@ -57,6 +57,7 @@ export default function Vision() {
             css={{ flex: 1, [MQ[3]]: { padding: '60px 20px' } }}
           >
             <Txt
+              data-aos="zoom"
               as="h1"
               txtAlign="center"
               size={38}
@@ -67,6 +68,8 @@ export default function Vision() {
             </Txt>
 
             <Txt
+              data-aos="zoom"
+              data-aos-delay="100"
               maxWidth={768}
               size={15}
               color={colors.grey200}
@@ -96,6 +99,8 @@ export default function Vision() {
                   align="center"
                   onMouseEnter={() => hoverHandler(i)}
                   onClick={() => hoverHandler(i)}
+                  data-aos="zoom-up"
+                  data-aos-delay="300"
                 >
                   <Img
                     src={item?.img}
