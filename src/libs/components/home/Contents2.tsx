@@ -42,6 +42,8 @@ export default function Contents2({ txt, data }: { txt: any; data: any }) {
               nextEl: nextRefs.current,
             }}
             css={swiperTheme}
+            data-aos="zoom"
+            data-aos-delay="300"
           >
             {data?.map((item: any) => (
               <SwiperSlide>
@@ -72,19 +74,25 @@ export default function Contents2({ txt, data }: { txt: any; data: any }) {
             css={{ [MQ[0]]: { order: 1 } }}
           >
             <Wrap>
-              <Txt as="h3" css={Themes('title1')}>
+              <Txt as="h3" css={Themes('title1')} data-aos="zoom">
                 {txt?.title1}
               </Txt>
-              <Txt as="h3" css={Themes('title2')}>
+              <Txt as="h3" css={Themes('title2')} data-aos="zoom" data-aos-delay="100">
                 {txt?.title2}
               </Txt>
             </Wrap>
 
-            <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')}>
+            <Txt
+              size={18}
+              margin={{ top: 20, bottom: 30 }}
+              css={Themes('txt')}
+              data-aos="zoom"
+              data-aos-delay="200"
+            >
               {txt?.subTitle}
             </Txt>
 
-            <Row gap={16}>
+            <Row gap={16} data-aos="zoom" data-aos-delay="200">
               <Tab
                 variant="border"
                 css={Themes('tab')}
@@ -113,18 +121,27 @@ export default function Contents2({ txt, data }: { txt: any; data: any }) {
             align="center"
             css={{ [MQ[0]]: { order: 1 } }}
           >
-            <Txt as="h3" css={Themes('title1')}>
+            <Txt as="h3" css={Themes('title1')} data-aos="zoom">
               {txt?.title1}
             </Txt>
-            <Txt as="h3" css={Themes('title2')}>
+            <Txt as="h3" css={Themes('title2')} data-aos="zoom" data-aos-delay="100">
               {txt?.title2}
             </Txt>
 
-            <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')} txtAlign="center">
+            <Txt
+              size={18}
+              margin={{ top: 20, bottom: 30 }}
+              css={Themes('txt')}
+              txtAlign="center"
+              data-aos="zoom"
+              data-aos-delay="200"
+            >
               {txt?.subTitle}
             </Txt>
 
             <Tab
+              data-aos="zoom"
+              data-aos-delay="350"
               variant="border"
               maxWidth={260}
               css={Themes('tab')}

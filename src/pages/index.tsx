@@ -46,8 +46,6 @@ export default function Index() {
   const queryData = noticeQuery();
   const { alartData } = queryData;
 
-  console.log(data);
-
   return (
     <>
       <SEO />

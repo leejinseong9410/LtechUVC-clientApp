@@ -1,5 +1,6 @@
 import React, { ReactNode, useEffect } from 'react';
 import { NextRouter, useRouter } from 'next/router';
+import Aos from 'aos';
 
 //atoms
 import { useRecoilState, useRecoilValue } from 'recoil';
@@ -41,6 +42,10 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
 
   const isLangType = useRecoilValue(langTypeAtom);
   const [isLanguage, setIsLanguage] = useRecoilState(langAtom);
+
+  useEffect(() => {
+    Aos.init({ duration: 900, easing: 'ease-in-out' });
+  }, []);
 
   useEffect(() => {
     if (isLangType === 'en') {

@@ -72,19 +72,26 @@ export default function Banner() {
         zIndex={50}
       >
         <Column maxWidth={1400} gap={20} padding={{ all: 20 }}>
-          <Txt as="h1" color={colors.white} css={{ [MQ[3]]: { fontSize: fontSize.s34 } }}>
+          <Txt
+            as="h1"
+            color={colors.white}
+            css={{ [MQ[3]]: { fontSize: fontSize.s34 } }}
+            data-aos="zoom-in"
+          >
             {lang?.home?.banner?.title}
           </Txt>
 
           <Txt
             size={18}
             color={colors.grey200}
+            data-aos="zoom-in"
+            data-aos-delay="200"
             css={{ [MQ[3]]: { fontSize: fontSize.s15, whiteSpace: 'normal' } }}
           >
             {lang?.home?.banner?.subTitle}
           </Txt>
 
-          <Row gap={8} align="center" margin={{ top: 10 }}>
+          <Row gap={8} align="center" margin={{ top: 10 }} data-aos="zoom-in" data-aos-delay="300">
             {videos.map((_, index) => (
               <div
                 key={index}

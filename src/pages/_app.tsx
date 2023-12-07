@@ -12,6 +12,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/free-mode';
+import 'aos/dist/aos.css';
 
 //components
 import AppLayout from '@/libs/core/App';

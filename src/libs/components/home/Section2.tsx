@@ -18,15 +18,27 @@ export default function Section2({ txt }: { txt: any }) {
         borderRadius={10}
         css={{ flex: 1, [MQ[3]]: { padding: '160px 20px' } }}
       >
-        <Txt as="h2" size={40} css={Themes('title')} txtAlign="center">
+        <Txt as="h2" size={40} css={Themes('title')} txtAlign="center" data-aos="fade-up">
           {txt?.title}
         </Txt>
 
-        <Txt size={18} css={Themes('txt')} txtAlign="center">
+        <Txt
+          size={18}
+          css={Themes('txt')}
+          txtAlign="center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           {txt?.subTitle}
         </Txt>
 
-        <Tab variant="border" css={Themes('tab')} onClick={() => router.push('/company/vision')}>
+        <Tab
+          variant="border"
+          css={Themes('tab')}
+          data-aos="fade-up"
+          data-aos-delay="400"
+          onClick={() => router.push('/company/vision')}
+        >
           {txt?.tabName}
         </Tab>
       </Wrap>

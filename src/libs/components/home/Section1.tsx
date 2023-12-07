@@ -12,16 +12,24 @@ export default function Section1({ txt }: { txt: any }) {
       {/* 좌측 */}
       <Column maxWidth={520} css={{ [MQ[2]]: { maxWidth: '100%' } }}>
         <Wrap gap={16} margin={{ bottom: 50 }}>
-          <Txt as="h2" size={40} css={Themes('title')}>
+          <Txt as="h2" size={40} css={Themes('title')} data-aos="fade">
             {txt?.title}
           </Txt>
 
-          <Txt size={18} color={colors.grey800} css={Themes('txt')}>
+          <Txt
+            size={18}
+            color={colors.grey800}
+            css={Themes('txt')}
+            data-aos="fade"
+            data-aos-delay="200"
+          >
             {txt?.subTitle}
           </Txt>
         </Wrap>
 
         <Wrap
+          data-aos="fade"
+          data-aos-delay="300"
           align="center"
           crossAlign="center"
           height="100%"
@@ -32,7 +40,13 @@ export default function Section1({ txt }: { txt: any }) {
           <Img src={txt?.img1} alt={txt?.content1} size={{ maxWidth: 400 }} objectFit="fill" />
         </Wrap>
 
-        <Row margin={{ top: 10 }} crossAlign="space-between" align="center">
+        <Row
+          margin={{ top: 10 }}
+          crossAlign="space-between"
+          align="center"
+          data-aos="fade"
+          data-aos-delay="300"
+        >
           <TxtSpan size={18} css={Themes('contentTxt')}>
             {txt?.content1}
           </TxtSpan>
@@ -45,7 +59,7 @@ export default function Section1({ txt }: { txt: any }) {
 
       {/* 우측 */}
       <Column gap={40}>
-        <Column gap={10}>
+        <Column gap={10} data-aos="fade" data-aos-delay="400">
           <Wrap
             align="center"
             height="100%"
@@ -71,7 +85,7 @@ export default function Section1({ txt }: { txt: any }) {
           </Row>
         </Column>
 
-        <Column gap={10}>
+        <Column gap={10} data-aos="fade" data-aos-delay="500">
           <Wrap
             align="center"
             height="100%"

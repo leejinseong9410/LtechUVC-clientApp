@@ -32,19 +32,25 @@ export default function Contents3({ txt, data }: { txt: any; data: any }) {
       <Wrap maxWidth={660} align="end" css={{ [MQ[0]]: { alignItems: 'start' } }}>
         <Column maxWidth={440} padding={{ horizontal: 20 }} crossAlign="end">
           <Wrap>
-            <Txt as="h3" css={Themes('title1')}>
+            <Txt as="h3" css={Themes('title1')} data-aos="zoom">
               {txt?.title1}
             </Txt>
-            <Txt as="h3" css={Themes('title2')}>
+            <Txt as="h3" css={Themes('title2')} data-aos="zoom" data-aos-delay="100">
               {txt?.title2}
             </Txt>
           </Wrap>
 
-          <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')}>
+          <Txt
+            size={18}
+            margin={{ top: 20, bottom: 30 }}
+            css={Themes('txt')}
+            data-aos="zoom"
+            data-aos-delay="200"
+          >
             {txt?.subTitle}
           </Txt>
 
-          <Row gap={16}>
+          <Row gap={16} data-aos="zoom" data-aos-delay="200">
             <Tab variant="border" css={Themes('tab')} onClick={() => router.push('/projects/list')}>
               더보기
             </Tab>
@@ -63,6 +69,8 @@ export default function Contents3({ txt, data }: { txt: any; data: any }) {
       </Wrap>
 
       <Swiper
+        data-aos="zoom"
+        data-aos-delay="300"
         loop={true}
         freeMode={true}
         slidesPerView={3}

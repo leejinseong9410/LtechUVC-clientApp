@@ -34,16 +34,22 @@ export default function Contents1({ txt, data }: { txt: any; data: any }) {
       {data?.length > 3 ? (
         <>
           <Wrap maxWidth={660} align="end" css={{ [MQ[0]]: { alignItems: 'start' } }}>
-            <Column maxWidth={440} padding={{ horizontal: 20 }} crossAlign="end">
+            <Column maxWidth={440} padding={{ horizontal: 20 }} crossAlign="end" data-aos="zoom">
               <Txt as="h3" css={Themes('title')}>
                 {txt?.title}
               </Txt>
 
-              <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')}>
+              <Txt
+                size={18}
+                margin={{ top: 20, bottom: 30 }}
+                css={Themes('txt')}
+                data-aos="zoom"
+                data-aos-delay="200"
+              >
                 {txt?.subTitle}
               </Txt>
 
-              <Row gap={16}>
+              <Row gap={16} data-aos="zoom" data-aos-delay="200">
                 <Tab
                   variant="border"
                   css={Themes('tab')}
@@ -76,6 +82,8 @@ export default function Contents1({ txt, data }: { txt: any; data: any }) {
               nextEl: nextRef.current,
             }}
             css={swiperTheme}
+            data-aos="zoom"
+            data-aos-delay="300"
           >
             {data?.map((item: any) => (
               <SwiperSlide>
@@ -104,15 +112,22 @@ export default function Contents1({ txt, data }: { txt: any; data: any }) {
         <Column align="center" gap={50}>
           <Wrap align="center">
             <Column maxWidth={440} padding={{ horizontal: 20 }} align="center">
-              <Txt as="h3" css={Themes('title')}>
+              <Txt as="h3" css={Themes('title')} data-aos="zoom">
                 {txt?.title}
               </Txt>
 
-              <Txt size={18} margin={{ top: 20, bottom: 30 }} css={Themes('txt')} txtAlign="center">
+              <Txt
+                size={18}
+                margin={{ top: 20, bottom: 30 }}
+                css={Themes('txt')}
+                txtAlign="center"
+                data-aos="zoom"
+                data-aos-delay="200"
+              >
                 {txt?.subTitle}
               </Txt>
 
-              <Row gap={16} crossAlign="center">
+              <Row gap={16} crossAlign="center" data-aos="zoom" data-aos-delay="200">
                 <Tab
                   maxWidth={200}
                   variant="border"
@@ -135,7 +150,7 @@ export default function Contents1({ txt, data }: { txt: any; data: any }) {
             </Column>
           </Wrap>
 
-          <Wrap maxWidth={700} padding={{ horizontal: 20 }}>
+          <Wrap maxWidth={700} padding={{ horizontal: 20 }} data-aos="zoom" data-aos-delay="300">
             <Swiper
               loop={true}
               spaceBetween={20}
