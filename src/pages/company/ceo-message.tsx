@@ -68,9 +68,10 @@ export default function CeoMessage() {
                 </TxtSpan>
 
                 <Row gap={30} margin={{ top: 6, bottom: 20 }}>
-                  <Txt size={18} weight="medium">
+                  {/**
+                   <Txt size={18} weight="medium">
                     {ceoIntroduce?.name1}
-                  </Txt>
+                  </Txt>*/}   
                   <Txt size={18} weight="medium">
                     {ceoIntroduce?.name2}
                   </Txt>
