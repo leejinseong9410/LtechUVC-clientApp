@@ -21,7 +21,7 @@ import SEO from '@/seo.config';
 import BannerTitle from '@/libs/components/_custom/BannerTitle';
 import LoadingSkeleton from '@/libs/components/_custom/LoadingSkeleton';
 
-//
+
 export default function List() {
   const router = useRouter();
   const { page } = router.query;
@@ -29,9 +29,13 @@ export default function List() {
   const queryData = noticeQuery();
   const { data, isLoading } = queryData;
 
+  console.log(data);
+  
+
   const lang = useRecoilValue(langAtom);
   const langType = useRecoilValue(langTypeAtom);
   const txt = lang?.콘텐츠?.공고;
+  
 
   if (isLoading) {
     return (

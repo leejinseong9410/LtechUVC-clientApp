@@ -36,8 +36,9 @@ export default function Section1({ txt }: { txt: any }) {
           padding={{ vertical: 50, horizontal: 30 }}
           backgroundColor="#F5F6F9"
           borderRadius={10}
+          border={{ solid: 1, position: "top", color: colors.grey300}}
         >
-          <Img src={txt?.img1} alt={txt?.content1} size={{ maxWidth: 400 }} objectFit="fill" />
+          <Img src={txt?.img1} alt={txt?.content1} size={{ maxWidth: 700 }} objectFit="fill" />
         </Wrap>
 
         <Row
@@ -66,12 +67,13 @@ export default function Section1({ txt }: { txt: any }) {
             padding={{ vertical: 50, horizontal: 30 }}
             backgroundColor="#F5F6F9"
             borderRadius={10}
+            border={{ solid: 1, position: "top", color: colors.grey300}}
           >
             <Img
               src={txt?.img2}
               alt={txt?.content2}
               size={{ width: '100%', maxWidth: 320 }}
-              objectFit="fill"
+              objectFit="cover"
             />
           </Wrap>
           <Row crossAlign="space-between" align="center">
@@ -92,12 +94,13 @@ export default function Section1({ txt }: { txt: any }) {
             padding={{ vertical: 50, horizontal: 30 }}
             backgroundColor="#F5F6F9"
             borderRadius={10}
+            border={{ solid: 1, position: "top", color: colors.grey300}}
           >
             <Img
               src={txt?.img3}
               alt={txt?.content3}
               size={{ width: '100%', maxWidth: 320 }}
-              objectFit="fill"
+              objectFit="cover"
             />
           </Wrap>
 

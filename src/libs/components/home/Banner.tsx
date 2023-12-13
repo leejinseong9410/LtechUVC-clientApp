@@ -19,7 +19,7 @@ export default function Banner() {
   const lang = useRecoilValue(langAtom);
   const [activeVideo, setActiveVideo] = useState(0);
   const videos = [
-    'https://res.cloudinary.com/dp0gh7jel/video/upload/v1700550433/89b863b8-bc34-4269-ad4c-09e81e2f5661_ctniyo.mp4',
+    'https://res.cloudinary.com/dp0gh7jel/video/upload/v1702434312/ve7ckkyfmpqnh6obvd9r.mp4',
     'https://res.cloudinary.com/dp0gh7jel/video/upload/v1700550442/second_gwp06b.mp4',
   ];
 
@@ -68,7 +68,7 @@ export default function Banner() {
         minHeight="100vh"
         align="center"
         crossAlign="center"
-        backgroundColor="rgba(0,0,0,0.6)"
+        backgroundColor="rgba(0,0,0,0.2)"
         zIndex={50}
       >
         <Column maxWidth={1400} gap={20} padding={{ all: 20 }}>

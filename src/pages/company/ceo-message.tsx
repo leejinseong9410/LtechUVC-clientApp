@@ -4,7 +4,7 @@ import React from 'react';
 import ceoBanner from 'public/images/ceo/ceo-banner.png';
 
 //libs
-import { Column, Img, Row, Section, Spacing, Txt, TxtSpan } from '@/_ui_libs/_index';
+import { Column, Img, Padding, Row, Section, Spacing, Txt, TxtSpan } from '@/_ui_libs/_index';
 import { MQ, colors, fontSize } from '@/libs/themes/_index';
 
 //atoms
@@ -53,7 +53,15 @@ export default function CeoMessage() {
                 css={{ [MQ[1]]: { maxWidth: '100%' } }}
                 data-aos="fade-up"
               >
-                <Img src={ceoImg} width={600} alt="LEE JI YOUNG" size={{}} />
+              <Padding
+                all={40}
+                backgroundColor={colors.grey100}
+                borderRadius={10}
+                css={{ [MQ[2]]: { padding: 0 } }}
+              >
+                <Img src={ceoImg} width={600} alt="LEE JI YOUNG" size={{maxWidth: 600}} objectFit="contain" />             
+              </Padding>
+
 
                 <Row crossAlign="space-between">
                   <Txt size={14}>CEO</Txt>

@@ -35,27 +35,17 @@ export default function SmartEnergy() {
           padding={{ horizontal: 20 }}
         >
           {/* 연료 전지 */}
-          <Column gap={30} data-aos="zoom" data-aos-delay="300">
-            <Padding
-              all={40}
-              backgroundColor={colors.grey100}
-              borderRadius={10}
-              margin={{ top: 60 }}
-              css={{ [MQ[2]]: { marginTop: 40 } }}
-            >
+          <Column gap={30} data-aos="zoom" data-aos-delay="100" margin={{ top: 140}} css={{ [MQ[3]]: { marginTop: 80 } }}>
               <Img
                 src={txt?.content1?.img}
                 alt={txt?.title}
-                size={{ maxHeight: 400 }}
-                objectFit="contain"
+                size={{ maxHeight: 620 }}
+                objectFit="cover"
               />
-            </Padding>
-
             <Column gap={16}>
               <Txt as="strong" color={colors.keyColor}>
                 {txt?.content1?.title}
               </Txt>
-
               <Txt color={colors.grey700}>{txt?.content1?.text}</Txt>
             </Column>
           </Column>

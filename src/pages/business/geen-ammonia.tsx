@@ -51,24 +51,30 @@ export default function GeenAmmonia() {
           <Column gap={160} align="center" css={{ [MQ[2]]: { rowGap: 90 } }}>
             <Wrap
               maxWidth={1240}
-              padding={{ horizontal: 20 }}
+              padding={{ horizontal: 20, vertical: 0 }}
               margin={{ top: 60 }}
               css={{ [MQ[2]]: { marginTop: 40 } }}
             >
               <Padding
                 data-aos="zoom"
                 data-aos-delay="300"
-                all={40}
+                all={10}
                 backgroundColor={colors.grey100}
-                borderRadius={10}
+                border={{ solid: 1, position: "top", color: colors.grey200,}}
+                borderRadius={0}
                 css={{ [MQ[2]]: { padding: 0 } }}
               >
                 <Img
-                  src={txt?.titleImg}
+                  src={txt?.header[0].titleImg}
                   alt={txt?.title}
-                  size={{ maxHeight: 400 }}
-                  objectFit="contain"
+                  size={{ maxHeight: 700 }}
+                  objectFit="cover"
+                  borderRadius={0}
                 />
+
+                <Txt size={12} padding={{horizontal: 10, vertical: 30}} css={contentsInfoTheme('info_row_wrap')}>
+                      {txt?.header[0].title }
+                </Txt>
               </Padding>
             </Wrap>
 
