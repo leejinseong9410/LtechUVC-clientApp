@@ -54,12 +54,12 @@ export default function CeoMessage() {
                 data-aos="fade-up"
               >
               <Padding
-                all={40}
+                all={0}
                 backgroundColor={colors.grey100}
                 borderRadius={10}
                 css={{ [MQ[2]]: { padding: 0 } }}
               >
-                <Img src={ceoImg} width={600} alt="LEE JI YOUNG" size={{maxWidth: 600}} objectFit="contain" />             
+                <Img src={ceoImg} width={700} alt="LEE JI YOUNG" size={{maxWidth: 700}} objectFit="contain" />             
               </Padding>
 
 

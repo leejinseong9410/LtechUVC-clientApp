@@ -61,7 +61,7 @@ export default function GeenAmmonia() {
                 all={10}
                 backgroundColor={colors.grey100}
                 border={{ solid: 1, position: "top", color: colors.grey200,}}
-                borderRadius={0}
+                borderRadius={15}
                 css={{ [MQ[2]]: { padding: 0 } }}
               >
                 <Img
@@ -69,7 +69,7 @@ export default function GeenAmmonia() {
                   alt={txt?.title}
                   size={{ maxHeight: 700 }}
                   objectFit="cover"
-                  borderRadius={0}
+                  borderRadius={10}
                 />
 
                 <Txt size={12} padding={{horizontal: 10, vertical: 30}} css={contentsInfoTheme('info_row_wrap')}>
