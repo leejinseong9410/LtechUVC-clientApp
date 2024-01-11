@@ -1,7 +1,7 @@
 import React from 'react';
 
 //libs
-import { Container, Img, Row, Section, Spacing, Txt, TxtSpan } from '@/_ui_libs/_index';
+import { Column, Container, Img, Row, Section, Spacing, Txt, TxtSpan } from '@/_ui_libs/_index';
 import { MQ, colors } from '@/libs/themes/_index';
 
 //assets
@@ -14,12 +14,18 @@ import { moment } from '@/libs/utils/moment';
 import { useRecoilValue } from 'recoil';
 import { langAtom } from '@/libs/atoms/widgets-atom';
 import BackTab from '@/libs/components/_custom/BackTab';
-
+import { noticeQuery } from '@/_https/query/noticeQuery';
 //
 export default function Detail() {
   const isLang = useRecoilValue(langAtom);
   const txt = isLang?.콘텐츠?.프로젝트?.banner;
 
+  const queryData = noticeQuery();
+  const { alartData } = queryData;
+  // title={langType === 'ko' ? alartData?.result?.ko_title : alartData?.result?.en_title}
+
+  console.log(alartData?.result?.ko_title);
+  
   return (
     <Section>
       <Container
@@ -35,13 +41,13 @@ export default function Detail() {
         </Row>
 
         <Txt as="h1" size={26}>
-          프로젝트 타이틀 프로젝트 타이틀 프로젝트 타이틀
+          엘텍유브이씨 신주발행공고
         </Txt>
 
         <Spacing size={40} />
 
         <Img
-          src="https://res.cloudinary.com/dp0gh7jel/image/upload/v1700629122/img3_ovxxe9.png"
+          src="https://res.cloudinary.com/dp0gh7jel/image/upload/v1704960718/jgpft3tv1us9vvy0fd7l.png"
           alt=""
           objectFit="contain"
           screenRatio={{ x: 3, y: 4 }}

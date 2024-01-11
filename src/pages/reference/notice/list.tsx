@@ -29,14 +29,13 @@ export default function List() {
   const queryData = noticeQuery();
   const { data, isLoading } = queryData;
 
-  console.log(data);
+
   
 
   const lang = useRecoilValue(langAtom);
   const langType = useRecoilValue(langTypeAtom);
   const txt = lang?.콘텐츠?.공고;
   
-
   if (isLoading) {
     return (
       <>

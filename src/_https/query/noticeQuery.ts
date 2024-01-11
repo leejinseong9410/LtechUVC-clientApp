@@ -19,6 +19,5 @@ export function noticeQuery() {
     onSuccess: () => {},
     keepPreviousData: true,
   });
-
   return { data, isLoading, alartData };
 }
