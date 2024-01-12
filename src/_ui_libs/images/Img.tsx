@@ -47,6 +47,7 @@ export function Img({
         height={height}
         onClick={onClick}
         css={{
+          position: 'relative !important' as any,
           width: size?.width ? size?.width : '100%',
           height: size?.height ? size?.height : 'auto',
           minWidth: typeof size?.minWidth === 'number' ? `${size?.minWidth}px` : size?.minWidth,
