@@ -14,6 +14,9 @@ import TimeIcon from 'public/icons/time-icon.svg';
 import PrevIcon from 'public/icons/prev-icon.svg';
 import NextIcon from 'public/icons/next-icon.svg';
 import MouseIcon from 'public/icons/mouse-icon.svg';
+import Instargram from 'public/icons/instargram-icon.svg';
+import Facebook from 'public/icons/facebook-icon.svg';
+import X from 'public/icons/x-icon.svg';
 
 export {
   ToastIcon,
@@ -32,4 +35,7 @@ export {
   PrevIcon,
   NextIcon,
   MouseIcon,
+  Instargram,
+  Facebook,
+  X
 };

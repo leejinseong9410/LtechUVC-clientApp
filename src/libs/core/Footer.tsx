@@ -4,14 +4,14 @@ import { Interpolation, Theme } from '@emotion/react';
 
 //libs
 import { MQ, colors } from '@/libs/themes/_index';
-import { Column, Item, Items, TxtSpan } from '@/_ui_libs/_index';
+import { Column, Item, Items, Row, TxtSpan } from '@/_ui_libs/_index';
 
 //atoms
 import { useRecoilValue } from 'recoil';
 import { langAtom } from '@/libs/atoms/widgets-atom';
 
 //assets
-import { YoutubeIcon } from '../assets/icons';
+import { Facebook, Instargram, X, YoutubeIcon } from '../assets/icons';
 import { Logo } from '../assets/images';
 
 //
@@ -44,13 +44,33 @@ export default function Footer() {
           ))}
         </Items>
 
-        <Column margin={{ top: 60 }} gap={20}>
+        <Column margin={{ top: 60 }} gap={20} >
+          <Row align='center' gap={35}>
           <Link
             href="https://www.youtube.com/channel/UCaypchzm47bpQPlY0Cr1wzw?app=desktop"
             target="_blank"
           >
-            <YoutubeIcon width="90px" />
+            <YoutubeIcon width="40px" />
           </Link>
+          <Link
+            href=""
+            target="_blank"
+          >
+            <Instargram width="45px"/>
+          </Link>
+          <Link
+            href=""
+            target="_blank"
+          >
+            <Facebook width="40px"/>
+          </Link>
+          <Link
+            href=""
+            target="_blank"
+          >
+            <X width="40px"/>
+          </Link>
+          </Row>
           <Logo width="120px" fill={colors.keyColor} />
           <TxtSpan size={12} color={colors.grey600}>
             Copyright © 2019 LTechUVC Inc. All rights reserved
