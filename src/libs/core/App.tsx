@@ -25,6 +25,8 @@ import ko수소융복합Lang from 'src/libs/language/ko/수소융복합.json';
 import en수소융복합Lang from 'src/libs/language/en/수소융복합.json';
 import koContentsLang from 'src/libs/language/ko/contents.json';
 import enContentsLang from 'src/libs/language/en/contents.json';
+import ko개인정보처리Lang from 'src/libs/language/ko/개인정보처리.json'
+import en개인정보처리Lang from 'src/libs/language/en/개인정보처리.json'
 
 //components
 import Header from './Header';
@@ -60,6 +62,7 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
         스마트에너지: en스마트에너지Lang,
         수소융복합: en수소융복합Lang,
         콘텐츠: enContentsLang,
+        개인정보처리: en개인정보처리Lang,
       });
     } else {
       setIsLanguage({
@@ -73,6 +76,7 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
         스마트에너지: ko스마트에너지Lang,
         수소융복합: ko수소융복합Lang,
         콘텐츠: koContentsLang,
+        개인정보처리: ko개인정보처리Lang,
       });
     }
   }, [isLangType]);

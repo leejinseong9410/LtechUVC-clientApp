@@ -4,7 +4,7 @@ import { Interpolation, Theme } from '@emotion/react';
 
 //libs
 import { MQ, colors } from '@/libs/themes/_index';
-import { Column, Item, Items, Row, TxtSpan } from '@/_ui_libs/_index';
+import { Column, Item, Items, LinkHref, Padding, Row, Txt, TxtSpan } from '@/_ui_libs/_index';
 
 //atoms
 import { useRecoilValue } from 'recoil';
@@ -43,7 +43,15 @@ export default function Footer() {
             </Item>
           ))}
         </Items>
-
+        <Padding margin={{ top: 50}} gap={20}>
+        <LinkHref 
+        a="/policy/privacy" 
+        txtSize={16}
+        weight='bold'
+        colors={{ txt: "#000000"}}>
+        개인정보처리방침
+        </LinkHref>
+        </Padding>
         <Column margin={{ top: 60 }} gap={20} >
           <Row align='center' gap={35}>
           <Link

@@ -30,5 +30,6 @@ export const langAtom = atom<any>({
     스마트에너지: null,
     수소융복합: null,
     콘텐츠: null,
+    개인정보처리: null,
   },
 });
