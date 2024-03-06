@@ -25,7 +25,6 @@ import SEO from '@/seo.config';
 import ContentView from '@/libs/components/_custom/ContentView';
 import BannerTitle from '@/libs/components/_custom/BannerTitle';
 
-//
 export default function GeenAmmonia() {
   const lang = useRecoilValue(langAtom);
   const txt = lang?.그린암모니아;

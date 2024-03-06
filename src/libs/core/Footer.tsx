@@ -44,13 +44,7 @@ export default function Footer() {
           ))}
         </Items>
         <Padding margin={{ top: 50}} gap={20}>
-        <LinkHref 
-        a="/policy/privacy" 
-        txtSize={16}
-        weight='bold'
-        colors={{ txt: "#000000"}}>
-        개인정보처리방침
-        </LinkHref>
+        <LinkHref a="/policy/privacy" txtSize={16} weight='bold' colors={{ txt: "#000000"}}> 개인정보처리방침 </LinkHref>
         </Padding>
         <Column margin={{ top: 60 }} gap={20} >
           <Row align='center' gap={35}>
