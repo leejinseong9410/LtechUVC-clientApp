@@ -11,7 +11,7 @@ import { useRecoilValue } from 'recoil';
 import { langAtom } from '@/libs/atoms/widgets-atom';
 
 //assets
-import { Facebook, Instargram, X, YoutubeIcon } from '../assets/icons';
+import { Tiktok, Instargram, X, YoutubeIcon } from '../assets/icons';
 import { Logo } from '../assets/images';
 
 //
@@ -55,19 +55,19 @@ export default function Footer() {
             <YoutubeIcon width="40px" />
           </Link>
           <Link
-            href=""
+            href="https://www.instagram.com/ltechuvc/"
             target="_blank"
           >
             <Instargram width="45px"/>
           </Link>
           <Link
-            href=""
+            href="https://www.tiktok.com/@ltechuvc/"
             target="_blank"
           >
-            <Facebook width="40px"/>
+            <Tiktok width="40px"/>
           </Link>
           <Link
-            href=""
+            href="https://twitter.com/LTechUVC"
             target="_blank"
           >
             <X width="40px"/>

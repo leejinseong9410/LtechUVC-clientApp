@@ -15,7 +15,7 @@ import PrevIcon from 'public/icons/prev-icon.svg';
 import NextIcon from 'public/icons/next-icon.svg';
 import MouseIcon from 'public/icons/mouse-icon.svg';
 import Instargram from 'public/icons/instargram-icon.svg';
-import Facebook from 'public/icons/facebook-icon.svg';
+import Tiktok from 'public/icons/tiktok-icon.svg';
 import X from 'public/icons/x-icon.svg';
 
 export {
@@ -36,6 +36,6 @@ export {
   NextIcon,
   MouseIcon,
   Instargram,
-  Facebook,
+  Tiktok,
   X
 };
