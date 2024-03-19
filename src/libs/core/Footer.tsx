@@ -8,7 +8,7 @@ import { Column, Item, Items, LinkHref, Padding, Row, Txt, TxtSpan } from '@/_ui
 
 //atoms
 import { useRecoilValue } from 'recoil';
-import { langAtom } from '@/libs/atoms/widgets-atom';
+import { langAtom, langTypeAtom } from '@/libs/atoms/widgets-atom';
 
 //assets
 import { Tiktok, Instargram, X, YoutubeIcon } from '../assets/icons';
@@ -17,6 +17,7 @@ import { Logo } from '../assets/images';
 //
 export default function Footer() {
   const isLang = useRecoilValue(langAtom);
+  const langType = useRecoilValue(langTypeAtom)
   const menu = isLang?.nav?.category;
 
   return (
@@ -44,7 +45,7 @@ export default function Footer() {
           ))}
         </Items>
         <Padding margin={{ top: 20}} gap={20}>
-        <LinkHref a="/policy/privacy" txtSize={16} weight='bold' colors={{ txt: "#000000"}}> 개인정보처리방침 </LinkHref>
+        <LinkHref a="/policy/privacy" txtSize={16} weight='bold' colors={{ txt: "#000000"}}>{langType === 'ko' ? "개인정보처리방침" : "Privacy Policy" }</LinkHref>
         </Padding>
         <Column margin={{ top: 60 }} gap={20} >
           <Row align='center' gap={35}>
@@ -82,7 +83,7 @@ export default function Footer() {
             </Row>
           <Column gap={5}>
           <TxtSpan size={12} color={colors.grey600}>
-            오시는 길 | 서울 강남구 영동대로 607 (삼성동, 랜드마크빌딩) 13층
+            {langType === 'ko' ? "오시는 길 | 서울 강남구 영동대로 607 (삼성동, 랜드마크빌딩) 13층" : "Contact | 607, Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea" } 
           </TxtSpan>
           <TxtSpan size={12} color={colors.grey600}>
             TEL | 02-2039-1568
