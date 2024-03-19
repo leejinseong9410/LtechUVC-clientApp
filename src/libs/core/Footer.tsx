@@ -43,7 +43,7 @@ export default function Footer() {
             </Item>
           ))}
         </Items>
-        <Padding margin={{ top: 50}} gap={20}>
+        <Padding margin={{ top: 20}} gap={20}>
         <LinkHref a="/policy/privacy" txtSize={16} weight='bold' colors={{ txt: "#000000"}}> 개인정보처리방침 </LinkHref>
         </Padding>
         <Column margin={{ top: 60 }} gap={20} >
@@ -73,10 +73,22 @@ export default function Footer() {
             <X width="40px"/>
           </Link>
           </Row>
-          <Logo width="120px" fill={colors.keyColor} />
+          <Column gap={10}>
+            <Row align='center' gap={20}>
+            <Logo width="120px" fill={colors.keyColor} />
           <TxtSpan size={12} color={colors.grey600}>
-            Copyright © 2019 LTechUVC Inc. All rights reserved
+           ⓒ LTechUVC Inc.
           </TxtSpan>
+            </Row>
+          <Column gap={5}>
+          <TxtSpan size={12} color={colors.grey600}>
+            서울 강남구 영동대로 607 (삼성동, 랜드마크빌딩) 13층
+          </TxtSpan>
+          <TxtSpan size={12} color={colors.grey600}>
+            02-2039-1568
+          </TxtSpan>
+          </Column>
+          </Column>
         </Column>
       </Column>
     </footer>
