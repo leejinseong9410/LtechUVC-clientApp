@@ -13,7 +13,8 @@
       "menus": [
         { "title": "그린암모니아", "path": "/business/geen-ammonia" },
         { "title": "스마트 에너지", "path": "/business/smart-energy" },
-        { "title": "수소 융˙복합 사업", "path": "/business/hydrogen-business" }
+        { "title": "수소 융˙복합 사업", "path": "/business/hydrogen-business" },
+        { "title": "슈퍼비전 카메라 사업", "path": "//business/supervision-camera" }
       ]
     },
     {

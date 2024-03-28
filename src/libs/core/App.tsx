@@ -23,6 +23,8 @@ import ko스마트에너지Lang from 'src/libs/language/ko/스마트에너지.js
 import en스마트에너지Lang from 'src/libs/language/en/스마트에너지.json';
 import ko수소융복합Lang from 'src/libs/language/ko/수소융복합.json';
 import en수소융복합Lang from 'src/libs/language/en/수소융복합.json';
+import ko슈퍼비전Lang from "src/libs/language/ko/슈퍼비전카메라.json"
+import en슈퍼비전Lang from "src/libs/language/en/슈퍼비전카메라.json"
 import koContentsLang from 'src/libs/language/ko/contents.json';
 import enContentsLang from 'src/libs/language/en/contents.json';
 import ko개인정보처리Lang from 'src/libs/language/ko/개인정보처리.json'
@@ -60,6 +62,7 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
         비전: en비전Lang,
         그린암모니아: en그린암모니아Lang,
         스마트에너지: en스마트에너지Lang,
+        슈퍼비전: en슈퍼비전Lang,
         수소융복합: en수소융복합Lang,
         콘텐츠: enContentsLang,
         개인정보처리: en개인정보처리Lang,
@@ -74,6 +77,7 @@ export default function AppLayout({ children }: LayoutProps): JSX.Element {
         비전: ko비전Lang,
         그린암모니아: ko그린암모니아Lang,
         스마트에너지: ko스마트에너지Lang,
+        슈퍼비전: ko슈퍼비전Lang,
         수소융복합: ko수소융복합Lang,
         콘텐츠: koContentsLang,
         개인정보처리: ko개인정보처리Lang,

@@ -9,6 +9,8 @@
 
   "bgImg3": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700591360/%E1%84%89%E1%85%AE%E1%84%89%E1%85%A9%E1%84%8B%E1%85%B2%E1%86%BC%E1%84%87%E1%85%A9%E1%86%A8%E1%84%92%E1%85%A1%E1%86%B8_%E1%84%87%E1%85%A2%E1%84%80%E1%85%A7%E1%86%BC_cwnzyk.jpg",
 
+  "bgImg4": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711524177/dsscwepf8osklds6vusr.jpg",
+  
   "content": [
     {
       "txt": "Green Ammonia Manufacturing Business",
@@ -21,6 +23,10 @@
     {
       "txt": "Hydrogen Convergence Business",
       "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1700593416/%E1%84%80%E1%85%B3%E1%84%85%E1%85%AE%E1%86%B8_97238_pd5toq.png"
+    },
+    {
+      "txt": "Super Vision Camera Business",
+      "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711523656/zpjtzmpu5qe767astuai.png"
     }
   ]
 }

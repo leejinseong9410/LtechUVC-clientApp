@@ -83,7 +83,7 @@ export default function Footer() {
             </Row>
           <Column gap={5}>
           <TxtSpan size={12} color={colors.grey600}>
-            {langType === 'ko' ? "오시는 길 | 서울 강남구 영동대로 607 (삼성동, 랜드마크빌딩) 13층" : "Contact | 607, Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea" } 
+            {langType === 'ko' ? "오시는 길 | 서울 강남구 영동대로 607 (삼성동, 랜드마크빌딩) 13층" : "Contact | 607, Yeongdong-daero, Gangnam-gu, Seoul" } 
           </TxtSpan>
           <TxtSpan size={12} color={colors.grey600}>
             TEL | 02-2039-1568

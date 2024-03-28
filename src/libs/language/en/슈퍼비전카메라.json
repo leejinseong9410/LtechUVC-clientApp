@@ -1,0 +1,84 @@
+{
+    "banner": {
+      "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711353102/k0cuzaabli1m1ak5js94.jpg",
+      "title": "Super Vision Camera",
+      "subTitle": "Next-generation high-performance AI camera LTechUVC High-Tech Supervision"
+    },
+
+    "title": "A perfect long-distance video surveillance system that is not disturbed by low visibility or low-light situations.",
+
+    "text": "A x35x optical zoom lens that allows long-distance surveillance beyond the limits of short-distance video surveillance, laser lighting to secure images up to 1km at night, and a built-in defog engine that provides clear images even in smog or bad weather, as well as a remote server and IP network. A compact, all-in-one camera that connects to a",
+
+    "header": [{
+        "title": "`Next-generation high-performance AI camera LtechUVC High-Tech Supervision",
+        "titleImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711354063/a3qlb3yhcj22qwsjmzbv.png"
+    }],
+
+    "contentsTitle": "Super Vision Camera Applies to",
+
+    "contents": [
+        {
+          "title": "Offshore Wind Power\nGeneration and Safety Monitoring",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429204/o1xfxisozbqvkpu2uryc.jpg"
+        },
+        {
+          "title": "Smart City Crime Prevention",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1702432825/eqphukeq1jbq5dkngicq.jpg"
+        },
+        {
+          "title": "Disaster Monitoring",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429304/tkjz0n4hqevzqito3x11.jpg"
+        },
+        {
+          "title": "Military Guard",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429568/y7cmnwtkjp4fvkqajhxl.jpg"
+        },
+        {
+          "title": "Coast Guard",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429608/gitdog2dmenghvsjcjwb.jpg"
+        },
+        {
+            "title": "Road Traffic Monitoring",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429741/pbwrrl6dwgwsabscmqw5.jpg"
+        },
+        {
+            "title": "Dust and smoke monitoring in plants",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429836/tl8j77fdshpx80uya1nz.jpg"
+        },
+        {
+            "title": "Outdoor Fire Guard",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429977/al4rtwxd7flmxowk4imj.jpg"
+        }
+      ],
+
+      "videoTitle": "슈퍼비전 카메라 상세설명 동영상",
+      
+      "videoContents": [ 
+        {
+            "src": "https://res.cloudinary.com/dp0gh7jel/video/upload/v1711593428/upafxrjl5no802bbgxcg.mp4",
+            "descrition": "Equipped with a H/W defog engine and algorithm inside the camera, image improvement using the original data of the camera image sensor provides fast and clear images even in low-visibility environments such as smog, fog, and heavy snow."
+        },
+        {
+            "src": "https://res.cloudinary.com/dp0gh7jel/video/upload/v1711593434/foyvir8j50woocdjkdfw.mp4",
+            "descrition": "IR laser lighting that automatically works with the"
+        }
+      ],
+
+      "productsTitle": "Super Vision Camera Product Detail",
+      "productsSubtitle": "You can check information by clicking or touching the camera image.",
+
+      "products": [
+        { 
+            "name": "SD Series",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429047/haa6lw3qik2qmxloiruf.png"
+        }, 
+        {
+            "name": "Supervision Marine\nGimbal Camera",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429053/lysmshgxkxlmfnt0yxtp.png"
+        }
+    ],
+
+    "productDetail1": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711439439/j0rnvqd7rhvu2iwgl295.png",
+
+    "productDetail2": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711439446/crjswxy2viiuwkfirxpm.png"
+}

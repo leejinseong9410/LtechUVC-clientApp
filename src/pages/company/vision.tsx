@@ -18,22 +18,38 @@ export default function Vision() {
   const [hover1, setHover1] = useState(false);
   const [hover2, setHover2] = useState(false);
   const [hover3, setHover3] = useState(false);
+  const [hover4, setHover4] = useState(false);
+
+  const [hoverIndex, setHoverIndex] = useState(null);
+
+  const hoverIndexHandler = (index: any) => { 
+    setHoverIndex(index);
+  }
 
   const hoverHandler = (i: number) => {
     if (i == 0) {
       setHover1(true);
       setHover2(false);
       setHover3(false);
+      setHover4(false)
     }
     if (i == 1) {
       setHover1(false);
       setHover2(true);
       setHover3(false);
+      setHover4(false)
     }
     if (i == 2) {
       setHover1(false);
       setHover2(false);
       setHover3(true);
+      setHover4(false)
+    }
+    if (i == 3) { 
+      setHover1(false);
+      setHover2(false);
+      setHover3(false);
+      setHover4(true)
     }
   };
 
@@ -46,6 +62,7 @@ export default function Vision() {
             (hover1 && txt?.bgImg1) ||
             (hover2 && txt?.bgImg2) ||
             (hover3 && txt?.bgImg3) ||
+            (hover4 && txt?.bgImg4) ||
             txt?.bgImg1
           }
           css={{ flex: 1 }}

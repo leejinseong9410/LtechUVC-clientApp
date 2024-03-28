@@ -29,6 +29,7 @@ export const langAtom = atom<any>({
     그린암모니아: null,
     스마트에너지: null,
     수소융복합: null,
+    슈퍼비전: null,
     콘텐츠: null,
     개인정보처리: null,
   },

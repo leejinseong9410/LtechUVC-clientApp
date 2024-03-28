@@ -1,7 +1,7 @@
 {
   "banner": {
     "title": "그린에너지 선도기업",
-    "subTitle": "엘텍유브이씨는 탄소중립을 이끄는 글로벌 선도기업으로\n그린 에너지로 지구를 건강하게 만들고있습니다"
+    "subTitle": "그린수소 그린암모니아 기반 스마트 시티 전문 기업"
   },
 
   "item1": {
@@ -10,10 +10,12 @@
     "content1": "그린암모니아 제조사업",
     "content2": "스마트시티 & 연료전지 사업",
     "content3": "수소 융 ▪︎ 복합 사업",
+    "content4": "슈퍼비전 카메라 사업",
     "tabName": "자세히 보기",
     "img1": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1702433731/jce0gxx9btao6accseyf.jpg",
     "img2": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1702432825/eqphukeq1jbq5dkngicq.jpg",
-    "img3": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1702433187/tahgx9yz9b8hpblb67wb.jpg"
+    "img3": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1702433187/tahgx9yz9b8hpblb67wb.jpg",
+    "img4": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711524177/dsscwepf8osklds6vusr.jpg"
   },
 
   "item2": {

@@ -1,0 +1,84 @@
+{
+    "banner": {
+      "bannerImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711353102/k0cuzaabli1m1ak5js94.jpg",
+      "title": "슈퍼비전 카메라",
+      "subTitle": "차세대 고성능 AI 카메라 엘텍코리아 하이테크 슈퍼비전"
+    },
+
+    "title": "저시정, 저조도 상황에 방해받지 않는\n완벽한 원거리 영상감시 시스템",
+
+    "text": "근거리 영상감시의 한계를 넘어 원거리 감시가 가능한 x35배 광학 줌 렌즈, 야간 최대 1km 영상확보를 위한 레이저 조명, 스모그나 악천후에도 선명한 영상\n을 제공하는 내장 디포그 엔진과 함께, 원격서버와 IP Network로 연결되는 소형 일체형 카메라로 필요한 기능을 한곳에 담았습니다.",
+
+    "header": [{
+        "title": "`차세대 고성능 AI 카메라` 엘텍코리아 하이테크 슈퍼비전",
+        "titleImg": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711354063/a3qlb3yhcj22qwsjmzbv.png"
+    }],
+
+    "contentsTitle": "슈퍼비전 카메라 적용처",
+
+    "contents": [
+        {
+          "title": "해상 풍력발전\n안전감시",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429204/o1xfxisozbqvkpu2uryc.jpg"
+        },
+        {
+          "title": "스마트시티 방범",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1702432825/eqphukeq1jbq5dkngicq.jpg"
+        },
+        {
+          "title": "재난감시",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429304/tkjz0n4hqevzqito3x11.jpg"
+        },
+        {
+          "title": "군 경계",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429568/y7cmnwtkjp4fvkqajhxl.jpg"
+        },
+        {
+          "title": "안전(해안)감시",
+          "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429608/gitdog2dmenghvsjcjwb.jpg"
+        },
+        {
+            "title": "도로교통감시",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429741/pbwrrl6dwgwsabscmqw5.jpg"
+        },
+        {
+            "title": "플랜트 내 분진\n연기 감시",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429836/tl8j77fdshpx80uya1nz.jpg"
+        },
+        {
+            "title": "실외 화재 감시",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429977/al4rtwxd7flmxowk4imj.jpg"
+        }
+      ],
+
+      "videoTitle": "슈퍼비전 카메라 상세설명 동영상",
+      
+      "videoContents": [ 
+        {
+            "src": "https://res.cloudinary.com/dp0gh7jel/video/upload/v1711593428/upafxrjl5no802bbgxcg.mp4",
+            "descrition": "카메라 내부에 H/W 디포그엔진과 알고리즘을 장착하여\n카메라 이미지 센서의 원본데이터를 사용하는 영상개선으로 스모그, 안개, 폭설 등 \n저시정 환경에서도 빠르고 선명한 영상을 제공합니다."
+        },
+        {
+            "src": "https://res.cloudinary.com/dp0gh7jel/video/upload/v1711593434/foyvir8j50woocdjkdfw.mp4",
+            "descrition": "X35배 광학줌 및 카메라 줌과 자동 연동되는 IR 레이저 조명으로\n0.01Lux이하 저조도 상황에도 최대 1Km 거리의 도형 (30cmΧ 30cm)을 식별합니다."
+        }
+      ],
+
+      "productsTitle": "슈퍼비전 카메라 스펙",
+      "productsSubtitle": "카메라 이미지를 클릭 혹은 터치하여 정보를 확인할 수 있습니다.",
+
+      "products": [
+        { 
+            "name": "SD Series",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429047/haa6lw3qik2qmxloiruf.png"
+        }, 
+        {
+            "name": "슈퍼비전 선박용\n짐벌 카메라",
+            "img": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711429053/lysmshgxkxlmfnt0yxtp.png"
+        }
+    ],
+
+    "productDetail1": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711439439/j0rnvqd7rhvu2iwgl295.png",
+
+    "productDetail2": "https://res.cloudinary.com/dp0gh7jel/image/upload/v1711439446/crjswxy2viiuwkfirxpm.png"
+}

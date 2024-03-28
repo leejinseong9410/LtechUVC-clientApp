@@ -71,7 +71,7 @@ export default function GeenAmmonia() {
                   borderRadius={10}
                 />
 
-                <Txt size={12} padding={{horizontal: 10, vertical: 30}} css={contentsInfoTheme('info_row_wrap')}>
+                <Txt size={12} padding={{horizontal: 10, vertical: 30}} css={contentsInfoTheme('info_row_wrap')} txtAlign='center'>
                       {txt?.header[0].title }
                 </Txt>
               </Padding>

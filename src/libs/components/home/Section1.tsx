@@ -8,6 +8,7 @@ import { colors, fontSize, MQ } from '@/libs/themes/_index';
 //
 export default function Section1({ txt }: { txt: any }) {
   return (
+    <Column gap={40}>
     <Row gap={60} crossGap={40} css={Themes('box')}>
       {/* 좌측 */}
       <Column maxWidth={520} css={{ [MQ[2]]: { maxWidth: '100%' } }}>
@@ -116,6 +117,34 @@ export default function Section1({ txt }: { txt: any }) {
         </Column>
       </Column>
     </Row>
+    <Column gap={10} data-aos="fade" data-aos-delay="500">
+          <Wrap
+            align="center"
+            height="100%"
+            padding={{ vertical: 50, horizontal: 30 }}
+            backgroundColor="#F5F6F9"
+            borderRadius={10}
+            border={{ solid: 1, position: "top", color: colors.grey300}}
+          >
+            <Img
+              src={txt?.img4}
+              alt={txt?.content4}
+              size={{ width: '100%', maxWidth: 520 }}
+              objectFit="cover"
+            />
+          </Wrap>
+
+          <Row crossAlign="space-between" align="center">
+            <TxtSpan size={18} css={Themes('contentTxt')}>
+              {txt?.content4}
+            </TxtSpan>
+
+            <LinkHref a="/business/supervision-camera" txtSize={14} colors={{ txt: '#aaa' }}>
+              {txt?.tabName} &#62;
+            </LinkHref>
+          </Row>
+        </Column>
+    </Column>
   );
 }
 
